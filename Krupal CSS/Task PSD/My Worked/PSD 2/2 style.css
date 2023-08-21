@@ -1,0 +1,113 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Oswald:wght@200&family=Pacifico&family=Sacramento&display=swap');
+
+ .container{
+    width: 1300px;
+    margin: 0 auto;
+} 
+.row{
+    display: flex;
+}
+section{
+    background-color: rgb(14, 9, 2);
+}
+.main-text{
+    background-color: rgba(0, 255, 255, 0.125);
+}
+.first-text h2{
+    display: inline;
+    font-size: 50px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-text span{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    color: white;
+}
+.second-text{
+    padding: 40px 0;
+}
+.second-text h1{
+    color: white;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+.seven-text h3{
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.thired-text h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 20px 0 0 0;
+    font-weight: 600;
+}
+.four-text p{
+    font-size: 15px;
+    color: brown;
+    padding: 0 0 20px 0;
+}
+.five-text input{
+    padding: 5px 50px;
+    color: white;
+    margin: 0 0 20px 0;
+}
+.five-text button{
+    padding: 6px 20px;
+    margin-left: -10px;
+    border: none;
+    background-color: orange;
+}
+.six-text p{
+    width: 73%;
+    color: white;
+    font-size: 15px;
+    padding: 0 0 20px 0;
+}
+.icon ul li{
+    display: inline;
+    list-style: none;
+}
+.icon li a{
+    color: white;
+    text-decoration: none;
+    margin: 10px ;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+.col-50{
+    width: 50%;
+}
+.col-45{
+    width: 50%;
+}
+.links ul li{
+    list-style: none;
+    display: inline-block;
+}
+.links li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+.navbar{
+    /* padding: 0 50px; */
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 20px ;
+    background-color: darkolivegreen;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            padding: 10px;
+            background-color: blue;
+            
+            display: flex;
+            align-items: center;
+        }
+        .logo{
+            margin-left: 300px;
+            padding-top: 5px;
+        }
+        .search{
+            margin-left: 20px;
+        }
+        .item{
+            margin-left: 150px;
+        }
+        ul{
+            display: flex
+        }
+        ul li{
+            /* display: inline-block; */
+            margin: 0 25px;
+            display: flex;
+        }
+        ul li a{
+            
+            text-decoration: none;
+           
+        }
+        .search input{
+        padding:10px 200px ;
+        }
+        .search i{
+            margin: 2px -25px;
+        }
+        a{
+            padding: 5px 5px;
+            color: white;
+        }
+        a:hover{
+            color: black;
+        }
+        i{
+            margin-top: 6px;
+        }
+        i:hover{
+            color: white;
+        }
+        .last{
+            margin: 0 -1px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/Flipkart.png" alt="">
+        </div>
+        <div class="search">
+            <input type="search" name="" id="" placeholder="search product and other brands">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="item">
+            <ul>
+                <li><a href="#">Become a Seller</a></li>
+                <li><a href="#">More</a></li>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <li class="last"><a href="#">Cart</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    
+</body>
+</html>

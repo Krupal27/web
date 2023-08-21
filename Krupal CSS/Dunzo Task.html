@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            border: solid 2px;
+            height: 500px;
+            background-color: rgb(198, 246, 246);
+        }
+        .container{
+            /* border: solid 2px; */
+            /* margin:  20px; */
+        }
+        nav{
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cadetblue;
+        }
+        img{
+            margin-top: 3px;
+            margin-left: 100px;
+        }
+        ul li{
+            display: inline-block;
+            margin-left: 80px;
+        }
+        a{
+            text-decoration: none;
+            /* margin: px; */
+        }
+        a:hover{
+            color: rgb(85, 241, 85);
+        }
+        .icon:hover{
+            color:rgb(85, 241, 85) ;
+        }
+        .btns:hover{
+            color:rgb(40, 240, 40);
+        }
+        .icon{
+            margin-left: 175px;
+            /* margin: 0 40px; */
+        }
+        .btns{
+            margin: 0 10px;
+        }
+        button{
+            padding: 5px 15px;
+            background-color: green;
+            color: white;
+        }
+        .btn{
+            margin-left: 75px;
+            border-radius: 50px;
+
+        }
+        .btn:hover{
+            background-color: rgb(72, 28, 28);
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                        <img src="img/Dunzo.png" alt="">
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Dunzo for Partner</a></li>
+                        <li><a href="#">Business with Dunzo</a></li>
+                    </ul>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <p>Search</p>
+                </div>
+                <div class="btns">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Cart</p>
+                </div>
+                <div>
+                    <button class="btn">Sign in</button>
+                </div>
+                 
+            </nav>
+
+        </div>
+    </section>
+    
+</body>
+</html>

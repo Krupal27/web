@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1400px;
+    margin: 0 auto;
+    border: solid 2px;
+}
+.row{
+    display: flex;
+}
+.jcs{
+    justify-content: space-between;
+}
+.first-text{
+    width: 100%;
+}
+.sec-one-text{
+    width: 100%;
+}
+.col-70{
+    width: 90%;
+}
+.col-45{
+    /* width: 45%; */
+}
+.first-text h3{
+    font-size: 30px;
+}
+.first-text p{
+    width: 61%;
+    font-size: 25px;
+}
+.sec-one-text ul li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}

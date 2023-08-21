@@ -1,0 +1,655 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Pacifico&family=Sacramento&display=swap');
+.container{
+    /* width: 1300px; */
+    width: 100%;
+    margin: 0 auto; 
+}
+header{
+    background-color: antiquewhite;
+}
+.col-30{
+    width: 100%;
+}
+.col-45{
+    width: 100%;
+}
+.col-25{
+    /* width: 25%; */
+}
+.po-rel{
+    position: relative;
+}
+.po-ab{
+    position: absolute;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.jcs{
+    justify-content: space-between;
+}
+.align{
+    align-items: center;
+}
+.link ul li{
+    display: inline-block;
+    list-style: none;
+}
+.link li a{
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: black    ;
+}
+.link li a:hover{
+    color: darkturquoise;
+}
+.main-text img{
+    width: 100%;
+}
+.col-45 h1{
+    color: #484f5b;
+    font-size: 80px;
+    font-family: 'Oswald', sans-serif;
+}
+.col-45 p{
+    font-size: 25px;
+    padding: 35px 0;
+    color: #484f5b;
+    font-family: 'Oswald', sans-serif;
+}
+.col-45 button{
+    padding: 10px 20px;
+    background-color: pink;
+    color: #484f5b;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.sec-one{
+    overflow: hidden;
+}
+.shape-1{
+    top: 0;
+    left: -15px;
+}
+.shape-2{
+    top: -10px;
+    right: -5px;
+}
+.shape-3{
+    top: 190px;
+    left: 225px;
+}
+.shape-4{
+    bottom: 20px;
+    right: 0;
+}
+.shape-5{
+    top: 7px;
+    right: 60px;
+}
+.shape-6{
+    top: 10px;
+    right: 10px;
+}
+.shape-7{
+    bottom: 0;
+    right: 0;
+}
+.shape-8{
+    top: 0;
+    left: 0;
+}
+.shape-9{
+   bottom: 60px;
+   left: 250px;
+}
+.shape-10{
+   right: 0;
+   bottom: 0;
+}
+.sec-two{
+    background: url(img/zip-5\ sec-two\ BG.png);
+    padding: 100px 0;
+}
+.sec-two h2 {
+    font-size: 72px;
+    color: #484f5b;
+    font-family: 'Oswald', sans-serif;
+}
+.sec-two p{
+    font-size: 25px;
+    color: #484f5b;
+    font-family: 'Oswald', sans-serif;
+}
+.sec-two button{
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: pink;
+    color: #484f5b;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+.sec-three{
+    padding: 100px 0;
+}
+.banner_img-1{
+    margin-top: 50px;
+}
+.banner_img-3{
+    margin-top: 3px;
+}
+.sec-three h3{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;   
+    padding: 10px 0;
+}
+.sec-three p{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;    
+}
+.shape-11{
+    z-index: -1;
+    top: 120px;
+    left: 100px;
+}
+.shape-12{
+    z-index: -1;
+    left: 690px;
+    top: 90px;
+}
+.shape-13{
+    z-index: -1;
+    right: 120px;
+    top: 65px;
+}
+.sec-four{
+    padding: 100px 0;
+}
+.sec-four img{
+    width: 100%;
+}
+.sec-four-text h3{
+    font-size: 75px;
+    color: #484f5b;
+    font-family: 'Oswald', sans-serif;
+}
+.shape-14{
+    top: -10px;
+    left: -15px;
+}
+.shape-15{
+    top: -8px;
+}
+.shape-16{
+    bottom: 0;
+}
+.shape-17{
+    bottom: 10px;
+    left: 10px;
+}
+.shape-18{
+    z-index: -1;
+    right: 45px;
+    top: 62px;
+}
+.shape-19{
+    z-index: -1;
+    right: 690px;
+    top: 22px;
+}
+.shape-20{
+    z-index: -1;
+    right: 500px;
+    top: 70px;
+}
+.shape-21{
+    z-index: -1;
+    right: 45px;
+    top: 50px;
+}
+.shape-22{
+    bottom: 75px;
+    right: 600px;
+}
+.shape-23{
+    bottom: 60px;
+    right: 35px;
+}
+.shape-24{
+    bottom: 35px;
+    right: 35px;
+}
+.sec-five{
+    height: 500px;
+    padding: 100px 0;
+    background: url(img/zip-5\ sec-five\ BG.png);
+    background-size: cover;
+    /* background-color: #e3e1df; */
+}
+.col-45 h3{
+    font-size: 70px;
+    color: #484f5b;
+    font-family: 'Oswald', sans-serif;
+}
+.col-45 p{
+    font-size: 25px;
+    /* font-family: 'Oswald', sans-serif; */
+}
+.shape-25{
+    top: 85px;
+    left: 653px;
+}
+.sec-six{
+    padding:100px 0;
+}
+.main-text-2 h3{
+    text-align: center;
+    color: #484f5b;
+    font-size: 70px;
+    font-family: 'Oswald', sans-serif;
+}
+.main-text-2 p{
+    font-size: 20px;
+    color: #484f5b;
+    width: 55%;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+}
+.col-30 img{
+    width: 100%;
+}
+.sub-text-2 h3{
+    font-size: 30px;
+    color: #484f5b;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.sub-text-2 p{
+    font-size: 15px;
+    width: 61%;
+    color: #555555;
+    font-family: 'Oswald', sans-serif;
+    margin:0 auto;
+    text-align: center;
+}
+.sec-six{
+    overflow: hidden;
+}
+.shape-26{
+    z-index: -1;
+    top: 175px;
+    left: 65px;
+}
+.shape-27{
+    z-index: -1;
+    top: 80px;
+    left: 65px;
+}
+.shape-28{
+    top: 0;
+    right: 0;
+}
+.shape-29{
+    top: 0;
+    right: 0;
+}
+.shape-30{
+    top: 140px;
+    right: 0;
+}
+.shape-31{
+    z-index: -1;
+    bottom: 220px;
+    left: 450px;
+}
+.shape-32{
+    z-index: -1;
+    bottom: 60px;
+    right: 25px;
+}
+.shape-33{
+    z-index: -1;
+    bottom: 155px;
+    right: 50px;
+}
+.shape-34{
+    left: 0;
+    bottom: 0;
+}
+.shape-35{
+    left: 0;
+    bottom: 0;
+}
+.sec-seven{
+    padding: 100px 0;
+    background-color: rgb(245, 196, 204);
+}
+.sec-seven img{
+    width: 100%;
+}
+.sec-seven i{
+    font-size: 30px;
+    margin: 0 5px;
+    color: #555555;
+} .shape-36{
+    top: 250px;
+    z-index: 1;
+    left: 380px;
+} 
+.shape-37{
+    top: 100px;
+    left: 110px;
+}
+.sec-eight{
+    padding: 100px 0;
+}
+.sec-eight h3{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #555555;
+}
+.sec-eight p{
+    font-size: 20px;
+    width: 59%;
+    padding: 30px 0;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    color: #555555;
+}
+input{
+    width: 70%;
+    margin: 20px 0;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 10px;
+    color: white;
+}
+.inputs{
+    text-align: center;
+    color: #e9d2d2;
+}
+.Messages{
+    padding: 10px 10px 60px 10px;
+}
+.btn-2 button{
+    color: #555555;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(223, 162, 172);
+    border: none;
+    display: block;
+    margin: 25px auto;
+    padding: 10px 10px;
+    font-weight: 600;
+}
+.shape-38{
+    z-index: -1;
+    top: 90px;
+    left: 70px;
+}
+.shape-39{
+    top: 25px;
+    left: 70px;
+}
+.shape-40{
+    top: 0;
+    right: 0;
+}
+.shape-41{
+    top: 0;
+    right: 0;
+}
+.shape-42{
+    top: 138px;
+    right: 0;
+}
+.shape-43{
+    bottom: 40px;
+    right: 325px;
+}
+.shape-44{
+    z-index: -1;
+    right: 65px;
+    bottom: 95px;
+}
+.shape-45{
+    right: 85px;
+    bottom: 120px;
+}
+.shape-46{
+   left: 0;
+   bottom: 0;
+}
+.shape-47{
+    left: 0;
+    bottom: 0;
+}
+footer{
+    padding: 100px 0;
+    background-color: #484f5b;
+    /* width: 100%; */
+}
+.last-text-1 h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.last-text-1 p{
+    font-family: 'Oswald', sans-serif;
+    width: 45%;
+    padding: 15px 0;
+    font-size: 15px;
+    color: white;
+}
+ul li{
+    list-style: none;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+.last-sub-text h3{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.last-sub-text-1 ul li {
+    padding: 5px  0;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.last-sub-text-2{
+    padding-top: 90px ;
+}
+.last-sub-text-2 p {
+    color: white;
+    padding: 5px 0;
+}
+.last-sub-text-2 i {
+    padding: 5px 10px ;
+    background-color: white;
+    margin: 10px;
+}
+.shape-48{
+    right: 210px;
+    top: 95px;
+}
+@media(min-width:576px){
+    .container{
+        width: 530px;
+    }
+    .col-30{
+        width: 100%;
+    }
+    .col-45{
+        width: 100%;
+    }
+    .col-45{
+        display: block;
+        margin: 0 auto;
+    }
+    .col-45 h1{
+        font-size: 35px;
+    }
+    .col-45 p {
+        font-size: 15px;
+    }
+    .col-45 button{
+        padding: 10px 10px;
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    .sec-two{
+        background: url(img/zip-5\ sec-two\ BG.png);
+        background-position: center;
+    }
+    .sec-two h2 {
+        font-size: 30px;
+    }
+    .col-45 h3 {
+        font-size: 35px;
+    }
+    .col-30{
+        display: block;
+        margin: 10px auto;
+    }
+    .main-text-2 p{
+        font-size: 15px;
+        width: 96%;
+    }
+    .sec-eight h3{
+        font-size: 30px;
+    } 
+    .sec-eight p {
+        font-size: 12px;
+        width: 80%;
+    }
+
+}
+@media(min-width:768px){
+    .container{
+        width: 730px;
+    }
+    .col-30{
+        width: 50%;
+    }
+    .col-45{
+        width: 55%;
+    }
+    .col-45{
+        display: block;
+        margin: 0 auto;
+    }
+    .col-45 h1{
+        font-size: 45px;
+    }
+    .col-45 p {
+        font-size: 18px;
+    }
+    .col-45 button {
+        padding: 10px 15px;
+        margin: 10px 0;
+    }
+    .sec-two{
+        background: url(img/zip-5\ sec-two\ BG.png);
+        background-position: center;
+    }
+    .sec-two h2 {
+        font-size: 40px;
+    }
+    .col-45 h3 {
+        font-size:  48px;
+    }
+    .main-text-2 p{
+        font-size: 17px;
+        width: 85%;
+    }
+    .col-30{
+        display: block;
+        margin: 10px auto;
+    }
+    .sec-eight h3{
+        font-size: 35px;
+    }
+    .sec-eight p{
+        font-size: 17px;
+        width: 85%;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width: 920px;
+    }
+    .col-30{
+        width: 30%;
+    }
+    .col-45{
+        width: 45%;
+    }
+    .col-45 h1{
+        font-size: 55px;
+    }
+    .col-45 p {
+        font-size: 23px;
+        width: 90%;
+    }
+    .sec-two{
+        background: url(img/zip-5\ sec-two\ BG.png);
+        background-position: center;
+    }
+    .sec-two h2 {
+        font-size: 51px;
+    }
+    .col-45 h3 {
+        font-size:  50px;
+    }
+    .main-text-2 p{
+        width: 75%;
+    }
+    .sub-text-2 p {
+        width: 80%;
+    }
+    .sec-eight p{
+        width: 80%;
+        font-size: 20px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width: 1200px;
+    }
+    .col-30{
+        width: 30%;
+    }
+    .col-45{
+        width: 45%;
+    }
+    .col-45 h1 {
+        font-size: 70px;
+    }
+    .sec-two h2 {
+        font-size: 66px;
+    }
+    .main-text-2 p {
+        width: 59%;
+    }
+    .sec-eight p{
+        font-size: 20px;
+    }
+}
+
+
+

@@ -1,0 +1,1003 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@200&display=swap');
+.container{
+    /* width: 1300px; */
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    background-color: #303030;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-30{
+    width: 100%;
+}
+.col-45{
+    width: 100%;
+}
+.col-50{
+    width: 100%;
+}
+.navbar{
+    align-items: center;
+    padding: 10px 0;
+}
+.po-re{
+    position: relative;
+}
+.po-ab{
+    position: absolute;
+}
+.jcs{
+    justify-content: space-between;
+}
+.align{
+    align-items: center;
+}
+.jcse{
+    justify-content: space-evenly;
+    
+}
+.links ul li{
+    display: inline-block;
+    margin: 0 30px;
+}
+.links a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.icon{
+    font-size: 20px;
+    color: white;
+}
+.sec-one{
+    background-image: url(img/Main\ BG\ img.png);
+    background-size: cover;
+}
+.sec-one-text{
+    padding: 100px 0;
+}
+.sec-one-text h1{
+    font-size: 100px;
+    color: white;
+    font-family: 'Oswald', sans-serif ;
+}
+.sec-one-text p{
+    font-size: 35px;
+    color: white;
+    width: 50%;
+    padding: 50px 0;
+    font-family: 'Oswald', sans-serif;
+}
+.sec-one-text button{
+    padding: 15px 80px;
+    background-color: #e8631c;
+    color: white;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.sec-two{
+    background-color: #e8631c;
+}
+.main-cart{
+    padding: 100px 0;
+}
+.main-text h2{
+    font-size: 70px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+}
+.main-text p{
+    text-align: center;
+    font-size: 25px;
+    padding: 30px 0;
+    width: 47%;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.first-cart img{
+    width: 100%;
+}
+.first-cart{
+    border: solid 1px;
+    background-color: #303030;
+}
+.first-cart h3{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 0;
+    text-align: center;
+    color: white; 
+}
+.first-cart p{
+    color: white;
+    font-size: 20px;
+    width: 70%;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.sec-three{
+    background-color: #303030;
+}
+.main-text-2{
+    padding: 100px 0;
+}
+.sub-text h3{
+    font-size: 65px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+.sub-text p{
+    color: white;
+    width: 50%;
+    font-size: 25px;
+    padding: 30px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.second-cart{
+    border: solid 2px;
+    padding: 50px 0;
+    background-color: #e8631c ;
+}
+.second-cart img{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+}
+.second-cart h3{
+    font-size: 25px;
+    padding: 40px 0;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+.second-cart p{
+    width: 70%;
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.second-cart #doller{
+    width: 70%;
+    font-size: 25px;
+    border: solid 2px #303030;
+    background-color:#303030 ;     
+}
+.sec-four{
+    background-color: #e8631c;
+}
+.sec-four-text h3{
+    font-size: 50px;
+    font-family:'Oswald', sans-serif ;
+    color: white;
+    text-align: center;
+}
+.col-50 img{
+    width: 100%;
+}  
+.sec-four-text p{
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+    /* text-align: center; */
+    padding: 50px 0;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+.sec-four-text button{
+    padding: 10px 60px;
+    border: none;
+     display: block;
+    /* margin: 0 auto; */
+    margin: 0 100px ;
+    background-color: #303030;
+    color: white;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+.sec-five{
+    background-color: #e8631c;
+}
+.sec-five-text h3{
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+.sec-five-text p{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    width: 74%;
+    padding: 50px 0;
+}
+.sec-five-text button{
+    padding: 10px 60px;
+    border: none;
+    background-color: #303030;
+    color: white;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+.sec-six{
+    background-color: #303030;
+    padding: 100px 0;
+}
+.sec-six-text h3{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;;
+}
+.sec-six-text p{
+    color: white;
+    padding: 100px 0;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    width: 47%;
+    margin: 0 auto;
+    text-align: center;
+}
+.six-cart h3{
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.six-cart p{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.sec-seven{
+    padding: 100px 0;
+    background: url(img/sec-seven\ bg.png);
+    background-size: cover;
+}
+.sec-seven-main p{
+    font-size: 45px;
+    padding: 100px 0;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+.sec-seven-main h3{
+    font-size: 50px;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.sec-eight{
+    background-color: #e8631c;
+    padding: 100px 0;
+}
+.sec-eight-text h3{
+    color: white;
+    font-size: 55px;
+    margin: 100px 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.sec-eight-text p{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    padding: 30px 0;
+    width: 47%;
+    text-align: center;
+    margin: 0 auto;
+}
+.input{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+}
+.input input{
+    padding: 10px;
+    width: 60%;
+    border: none;
+    color: #ffff;
+}
+.input button{
+    margin-left: -4px;
+    padding: 10px 20px;
+    background-color: #303030;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.sec-nine-subtext{
+    width: 50%;
+} 
+footer{
+    background-color: #303030;
+}
+.main-text-3{
+    padding: 100px 0;
+}
+.main-text-3 h3{
+    font-size: 40px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.main-text-3 p{
+    color: white;
+    width: 72%;
+    padding: 15px 0;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+.sec-nine-subtext ul li{
+    list-style: none;
+    padding: 5px 0;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;  
+}
+.main-text-3 i{
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    margin-left: 5px;
+}
+.sec-nine-subtext h3 {
+    font-size: 30px;
+    color: white;
+    font-family:'Oswald', sans-serif ;
+}
+.sec-two{
+    overflow: hidden;
+}
+.cart-2 img{
+    position: relative;
+    z-index: 1;
+}
+.shape-1{
+    width: 80%;
+    top: -35%;
+    left: -30%;
+}
+.sec-three{
+    overflow: hidden;
+}
+img{
+    /* position: relative; */
+}
+.shape-2{
+    width: 50%;
+    /* position: relative; */
+    z-index: 1;
+    left: -15%;
+    top: -35%;
+}
+.shape-3{
+    width: 50%;
+    /* position: relative; */
+    z-index: 1;
+    right: -10%;
+    bottom: -20%;
+}
+.sec-four{
+    overflow: hidden;
+}
+.shape-4{
+    width: 55%;
+    right: -15%;
+    top: -60%;
+}
+.shape-5{
+    width: 55%;
+    right: -10%;
+    bottom: -55%;
+}
+.sec-five{
+    overflow: hidden;
+}
+.shape-6{
+    width: 60%;
+    left: -13%;
+    bottom: -68%;
+}
+.sec-eight{
+    overflow: hidden;
+}
+/* .sec-eight-text h3{
+    position: relative;
+    z-index: 1;
+}
+input{
+    position: relative;
+    z-index: 1;
+} */
+.shape-7{
+    top: -30%;
+    left: -25%;
+}
+.shape-8{
+    bottom: -30%;
+    right: -25%;
+}
+@media(min-width:576px){
+    .container{
+        width: 520px;
+    }
+    .col-30{
+        width: 50%;
+    }
+    .col-45{
+        width: 70%;
+    }
+    .col-50{
+        width: 100%;
+    }
+    .sec-one{
+        background-image: url(img/Main\ BG\ img.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .sec-one-text h1{
+        font-size: 65px;
+    }
+    .sec-one-text p{
+        font-size: 20px;
+        width: 77%;
+    }
+    .sec-one-text button{
+        padding: 15px 50px;
+        font-size: 15px;
+    }
+    .main-text h2{
+        font-size: 45px;
+    }
+    .main-text p{
+        font-size: 20px;
+        width: 94%;
+    }
+    .col-30 {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+    .first-cart h3{
+        font-size: 18px;
+    }
+    .first-cart p {
+        width: 70%;
+        font-size: 14px;
+    }
+    .sub-text h3{
+        font-size: 45px;
+    }
+    .sub-text p{
+        font-size: 17px;
+        width: 74%;
+    }
+    .second-cart img{
+        width: 20%;
+    }
+    .second-cart h3{
+        font-size: 17px;
+        padding: 20px 0;
+    }
+    .second-cart p {
+        width: 97%;
+        font-size: 15px;
+    }
+    .second-cart #doller {
+        width: 45%;
+        font-size: 16px;
+    }
+    .sec-four-text h3 {
+        font-size: 25px;
+        padding: 10px 0;
+    }
+    .sec-four-text p {
+        width: 53%;
+        font-size: 15px;
+    }
+    .col-50 img{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }  
+    .sec-four-text button {
+        margin: 0 auto;
+        font-size: 11px;
+        padding: 10px 25px;
+    }
+    .sec-five-text h3{
+        font-size: 25px;
+        text-align: center; /* < */
+        padding: 10px 0; 
+    }
+    .sec-five-text p {
+        width: 53%;
+        font-size: 15px;
+        margin: 0 auto;     /* < */
+    }   
+    .sec-five-text button{
+        font-size: 11px;
+        display: block;
+        margin: 10px auto;  /* < */
+        padding: 10px 25px;
+    } 
+    .sec-six-text h3 {
+        font-size: 40px;
+    }
+    .sec-six-text p{
+        font-size: 15px;
+        width: 72%;
+    }
+    .six-cart h3 {
+        font-size: 30px;
+    }
+    .six-cart p{
+        font-size: 20px;
+    }
+    .sec-seven-main p{
+        font-size: 19px;
+        width: 100%;
+    }
+    .sec-seven-main h3 {
+        font-size: 30px;
+    }
+    .sec-eight-text h3{
+        font-size: 35px;
+        margin: 60px 0;
+    }
+    .sec-eight-text p{
+        font-size: 20px;
+        width: 94%;
+    }
+    .main-text-3 h3{
+        font-size: 30px;
+    }
+    .main-text-3 p {
+        width: 70%;
+        font-size: 15px;
+    }
+    .main-text-3 i{
+        padding: 5px;
+    }
+    li a{
+        font-size: 15px;
+    }
+} 
+
+ @media(min-width:768px){
+    .container{
+        width: 720px;
+    }
+    .col-30{
+        width: 50%;
+    }
+    .col-45{
+        width: 70%;
+    }
+    .col-50{
+        width: 100%;
+    }
+    .sec-one{
+        background-image: url(img/Main\ BG\ img.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .sec-one-text h1{
+        font-size: 80px;
+    }
+    .sec-one-text p{
+        font-size: 27px;
+        width: 68%;
+    }
+    .sec-one-text button{
+        padding: 15px 70px;
+        font-size: 17px;
+    }
+    .main-text h2{
+        font-size: 55px;
+    }
+    .main-text p{
+        font-size: 22px;
+        width: 75%;
+    }
+    .col-30 {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+    .first-cart h3{
+        font-size: 22px;
+    }
+    .first-cart p {
+        width: 70%;
+        font-size: 16px;
+    }
+    .sub-text h3{
+        font-size: 55px;
+    }
+    .sub-text p{
+        font-size: 20px;
+        width: 62%;
+    }
+    .second-cart img{
+        width: 22%;
+    }
+    .second-cart h3{
+        font-size: 20px;
+        padding: 25px 0;
+    }
+    .second-cart p {
+        width: 97%;
+        font-size: 21px;
+    }
+    .second-cart #doller {
+        width: 50%;
+        font-size: 18px;
+    }
+    .sec-four-text h3 {
+        font-size: 40px;
+        padding: 10px 0;
+    }
+    .sec-four-text p {
+        width: 51%;
+        font-size: 20px;
+    }
+    .sec-four-text button {
+        margin: 0 auto;
+        font-size: 12px;
+        padding: 10px 40px;
+    }
+    .col-50 img{
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    } 
+    .sec-five-text h3{
+        font-size: 40px;
+        text-align: center;        /* < */
+        padding: 10px 0;
+    }
+    .sec-five-text p {
+        width: 51%;
+        margin: 0 auto;            /* < */
+        font-size: 20px;
+    }
+    .sec-five-text button {
+        font-size: 12px;
+        display: block;
+        margin: 10px auto;         /* < */
+        padding: 10px 40px;
+    }
+    .sec-six-text h3 {
+        font-size: 50px;
+    }
+    .sec-six-text p{
+        font-size: 20px;
+        width: 70%;
+    }
+    .six-cart h3 {
+        font-size: 40px;
+    }
+    .six-cart p{
+        font-size: 30px;
+    }
+    .sec-seven-main p{
+        font-size: 30px;
+        width: 100%;
+    }
+    .sec-seven-main h3 {
+        font-size: 40px;
+    }
+    .sec-eight-text h3{
+        font-size: 45px;
+        margin: 60px 0;
+    }
+    .sec-eight-text p{
+        font-size: 25px;
+        width: 85%;
+    }
+    .main-text-3 h3{
+        font-size: 35px;
+    }
+    .main-text-3 p {
+        width: 57%;
+        font-size: 17px;
+    }
+    .main-text-3 i{
+        padding: 5px;
+    }
+    li a{
+        font-size: 15px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width: 950px;
+    }
+    .col-30{
+        width: 30%;
+    }
+    .col-45{
+        width: 45%;
+    } 
+    .col-50{
+        width: 50%;
+    }
+    .sec-one{
+        background-image: url(img/Main\ BG\ img.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .sec-one-text h1{
+        font-size: 100px;
+    }
+    .sec-one-text p{
+        font-size: 33px;
+        width: 63%;
+    }
+    .sec-one-text button{
+        padding: 15px 80px;
+        font-size: 20px;
+    }
+    .main-text h2{
+        font-size: 70px;
+    }
+    .main-text p{
+        font-size: 25px;
+        width: 65%;
+    }
+    .first-cart h3{
+        font-size: 25px;
+    }
+    .first-cart p {
+        width: 81%;
+        font-size: 20px;
+    }
+    .sub-text h3{
+        font-size: 65px;
+    }
+    .sub-text p{
+        font-size: 25px;
+        width: 60%;
+    }
+    .second-cart img{
+        width: 30%;
+    }
+    .second-cart h3{
+        font-size: 25px;
+        padding: 40px 0;
+    }
+    .second-cart p {
+        width: 97%;
+        font-size: 22px;
+    }
+    .second-cart #doller {
+        width: 65%;
+        font-size: 22px;
+    }
+    .sec-four-text h3 {
+        font-size: 50px;
+    }
+    .sec-four-text p {
+        width: 84%;
+        font-size: 22px;
+    }
+    .sec-four-text button {
+         margin: 0 40px;
+        font-size: 15px;
+        padding: 10px 60px;
+    }
+    .sec-five-text h3{
+        font-size: 50px;
+        text-align: none;
+    }
+    .sec-five-text p {
+        width: 84%;
+        font-size: 22px;
+    }
+    .sec-five-text button {
+        font-size: 15px;
+        padding: 10px 60px;
+    }
+    .sec-six-text h3 {
+        font-size: 60px;
+    }
+    .sec-six-text p{
+        font-size: 25px;
+        width: 65%;
+    }
+    .six-cart h3 {
+        font-size: 45px;
+    }
+    .six-cart p{
+        font-size: 35px;
+    }
+    .sec-seven-main p{
+        font-size: 39px;
+        width: 100%;
+    }
+    .sec-seven-main h3 {
+        font-size: 50px;
+    }
+    .sec-eight-text h3{
+        font-size: 55px;
+        margin: 80px 0;
+    }
+    .sec-eight-text p{
+        font-size: 30px;
+        width: 77%;
+    }
+    .main-text-3 h3{
+        font-size: 40px;
+    }
+    .main-text-3 p {
+        width: 80%;
+        font-size: 20px;
+    }
+    .main-text-3 i{
+        padding: 10px;
+    }
+    li a{
+        font-size: 20px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width: 1100px;
+    }
+    .col-30{
+        width: 30%;
+    }
+    .col-45{
+        width: 45%;
+    }
+    .col-50{
+        width: 50%;
+    }
+    .sec-one{
+        background-image: url(img/Main\ BG\ img.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .sec-one-text h1{
+        font-size: 100px;
+    }
+    .sec-one-text p{
+        width: 58%;
+        font-size: 35px;
+    }
+    .sec-one-text button{
+        padding: 15px 80px;
+        font-size: 20px;
+    }
+    .main-text h2{
+        font-size: 70px;
+    }
+    .main-text p{
+        font-size: 25px;
+        width: 56%;
+    }
+    .first-cart h3{
+        font-size: 25px;
+    }
+    .first-cart p {
+        width: 70%;
+        font-size: 20px;
+    }
+    .sub-text h3{
+        font-size: 65px;
+    }
+    .sub-text p{
+        font-size: 25px;
+        width: 51%;
+    }
+    .second-cart img{
+        width: 30%;
+    }
+    .second-cart h3{
+        font-size: 25px;
+        padding: 40px 0;
+    }
+    .second-cart p {
+        width: 95%;
+        font-size: 25px;
+    }
+    .second-cart #doller {
+        width: 70%;
+        font-size: 25px;
+    }
+    .sec-four-text h3 {
+        font-size: 50px;
+    }
+    .sec-four-text p {
+        width: 79%;
+        font-size: 24px;
+    }
+    .sec-four-text button {
+        margin: 0 60px;
+        font-size: 15px;
+        padding: 10px 60px;
+    }
+    .col-50 img{
+        width: 100%;
+    }
+    .sec-five-text h3{
+        font-size: 50px;
+        text-align: none;
+    }
+    .sec-five-text p {
+        width: 79%;
+        font-size: 24px;
+    }
+    .sec-five-text button {
+        font-size: 15px;
+        padding: 10px 60px;
+    }
+    .sec-six-text h3 {
+        font-size: 60px;
+    }
+    .sec-six-text p{
+        font-size: 25px;
+        width: 56%;
+    }
+    .six-cart h3 {
+        font-size: 45px;
+    }
+    .six-cart p{
+        font-size: 35px;
+    }
+    .sec-seven-main p{
+        font-size: 45px;
+        width: 100%;
+    }
+    .sec-seven-main h3 {
+        font-size: 50px;
+    }
+    .sec-eight-text h3{
+        font-size: 55px;
+        margin: 100px 0;
+    }
+    .sec-eight-text p{
+        font-size: 30px;
+        width: 67%;
+    }
+    .main-text-3 h3{
+        font-size: 40px;
+    }
+    .main-text-3 p {
+        width: 85%;
+        font-size: 25px;
+    }
+    .main-text-3 i{
+        padding: 10px;
+    }
+    li a{
+        font-size: 20px;
+    }
+}  
