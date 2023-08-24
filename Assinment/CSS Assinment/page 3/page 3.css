@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Jaldi&family=Lato:wght@100;300&family=Nanum+Gothic&family=Noto+Serif&family=Nunito:wght@300&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Pacifico&family=Preahvihear&family=Sacramento&family=Signika+Negative:wght@300&family=Source+Code+Pro:wght@300&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+.col-50{
+    width: 50%;
+    background-color: #202020;
+}
+.po-rel{
+    position: relative;
+}
+.po-ab{
+    position: absolute;
+}
+.main-taxt h2{
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Source Code Pro', monospace;     
+    text-align: right;
+    border-right: solid orangered 4px;
+    margin: 40px 80px ;
+    padding: 0 20px;
+}
+.main-taxt h3{
+    color: white;
+    text-align: right;
+    margin: 0 80px ;
+    color:orangered ;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-taxt p{
+    color: white;
+    text-align: right;
+    padding: 20px 80px;
+    font-family: 'Open Sans', sans-serif;
+}
+.taxt-2{
+    margin: 20px 0;
+}
+.shape-1{
+    top: 155px;
+    left: 730px;
+    width: 75px;
+}
+.shape-2{
+    top: 280px;
+    left: 730px;
+    width: 75px;
+}
+.shape-3{
+    top: 405px;
+    left: 730px;
+    width: 75px;
+}
+.col-50 img{
+    width: 100%;
+}
