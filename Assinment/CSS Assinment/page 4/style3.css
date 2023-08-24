@@ -49,35 +49,40 @@ section{
 .img1{
     position: absolute;
     width: 50px;
-    bottom: 95px;
+    bottom: 170px;
     left: 210px;
     z-index: 1;
 }
 .img2{
     position: absolute;
     width: 50px;
-    bottom: 190px;
+    bottom: 225px;
     left: 465px;
     z-index: 1;
 }
 .img3{
     position: absolute;
     width: 50px;
-    bottom: 250px;
+    bottom: 240px;
     left: 745px;
     z-index: 1;
 }
 .img4{
     position: absolute;
     width: 50px;
-    right: 465px;
-    bottom: 160px;
+    right: 455px;
+    bottom: 210px;
     z-index: 1;
 }
 .img5{
     position: absolute;
     right: 200px;
-    bottom: 200px;
+    bottom: 290px;
     width: 50px;
     z-index: 1;
 } 
+
+.hover:hover{
+    transform: scale(60%);
+    transition: 1s;
+}
