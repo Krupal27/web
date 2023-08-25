@@ -64,3 +64,8 @@
 .col-50 img{
     width: 100%;
 }
+
+.effect:hover{
+    transform: scale(65%);
+    transition: 2s;
+}
