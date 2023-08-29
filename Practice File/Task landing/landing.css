@@ -311,24 +311,24 @@ hr{
 
 .first-pera p{
     color: white;
-    font-size: 20px;
-    line-height: 1.8rem;
+    font-size: 17px;
+    line-height: 2.0rem;
     font-family: 'Lato', sans-serif;
 }
 
 .second-pera p{
     color: white;
-    font-size: 20px;
-    line-height: 1.8rem;
+    font-size: 17px;
+    line-height: 2.0rem;
     margin-left: 20px;
     font-family: 'Lato', sans-serif;
 }
 
 .thired-pera p{
     margin-top: 5.0rem;
-    line-height: 1.8rem;
+    line-height: 2.0rem;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Lato', sans-serif;
     background-color: #f58d54;
     padding: 20px;
@@ -397,7 +397,7 @@ hr{
     padding: 25px;
     border: none;
     border-radius: 30px;
-    background-color: #f58c54e7;
+    background-color: #f8ae86;
 }
 
 .btn-4:hover{
