@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.jcs{
+    justify-content: space-between;
+}
+
+.align{
+    align-items: center;
+}
+
+nav{
+    padding: 25px 0;
+}
+
