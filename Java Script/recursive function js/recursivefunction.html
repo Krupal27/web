@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <p>Recursion is a process of callimg yourself. A function that call itself is called a recursive function.</p>
+    <script>
+        function factorial(x) {
+            if (x == 0) {
+                return 1
+            }else{
+                console.log("called x",x);
+                console.log("called x-1",x-1);
+                return x*factorial(x-1)
+            }
+        }
+        let fact = factorial(5)
+        console.log(fact); 
+        
+
+    </script>
+    
+</body>
+</html>
