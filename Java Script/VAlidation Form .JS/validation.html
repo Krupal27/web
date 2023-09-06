@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" method="post">
+        <input type="text" onblur="chakevalid()" required name="username" id="username">
+        <span id="Username Error"></span>
+        <input type="submit" value="submit" name="username" id="username">
+    </form>
+
+    <script>
+        function chakevalid() {
+            let inp = document.getElementById("username");
+            console.log(inp.value);
+            if (inp.value == "") {
+                // document.getElementById("Username Error").innerText = " This Field is req " 
+                console.log("This Field req");
+            } else {
+                // document.getElementById("Username Error").innerText = "  " 
+                console.log("done");
+            }
+        }
+    </script>
+
+</body>
+</html>
