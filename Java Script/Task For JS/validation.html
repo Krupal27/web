@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="" method="post">
+    <div>
+        <input type="text" placeholder="Enter Your Username" onblur="chakevalid()" required name="username" id="username">
+        <span id="Username Error"></span>
+        <input type="submit" value="submit" name="username" id="username">
+    </div>
+    <br>
+    <div>
+        <input type="email" placeholder="Enter Your Email" onblur="chakevalid()" required name="useremail" id="useremail">
+        <span id="Useremail Error"></span>
+        <input type="submit" value="submit" name="useremail" id="useremail">
+    </div>
+    <br>
+    <div>
+        <input type="password" placeholder="Enter Your Password" onblur="chakevalid()" required name="userpassword" id="userpassword">
+        <span id="Userpassword Error"></span>
+        <input type="submit" value="submit" name="userpassword" id="userpassword">
+    </div>
+    <br>
+    <div>
+        <input type="tel" placeholder="Enter Your Number" onblur="chakevalid()" required name="usernumber" id="usernumber">
+        <span id="Usernumber Error"></span>
+        <input type="submit" value="submit" name="usernumber" id="usernumber">
+    </div>
+</form>
+
+    <script>
+        function chakevalid() {
+            let name = document.getElementById("username")
+            let pass = document.getElementById("userpassword")
+            let email = document.getElementById("useremail")
+            let number = document.getElementById("usernumber")
+
+            console.log(name.value);
+            if (name.value == "") {
+                document.getElementById("Username Error").innerText = " This Filed is req "
+                console.log("This Filed is req");
+            } else {
+                // document.getElementById("Username Erroe").innerText = "  "
+                console.log("Done");
+            }
+
+            console.log(email.value);
+            if (email.value == "") {
+                document.getElementById("Useremail Error").innerText=" This Filed is Req "
+                console.log("THis Filed is req");
+            } else {
+                // document.getElementById("Useremail Error").innerText="  "
+            }
+
+            console.log(pass.value);
+            if (pass.value == "") {
+                document.getElementById("Userpassword Error").innerText = " This filed is Req "
+                console.log("This Filed is req");
+            } else {
+                // document.getElementById("Userpassword Error").innerText = "  "
+                console.log("Done");
+            }
+
+            console.log(number.value);
+            if (number.value == "") {
+                document.getElementById("Usernumber Error").innerText = " This Filed is Req "
+                console.log("This Filed is Req");
+            } else {
+                // document.getElementById("usernumber Error").innerText = "  "
+                console.log("done");
+                
+            }
+        }
+    </script>
+    
+</body>
+</html>
