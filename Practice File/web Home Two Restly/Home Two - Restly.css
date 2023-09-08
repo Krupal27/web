@@ -5,7 +5,7 @@
 }
 
 .container{
-    width: 1300px;
+    width: 1400px;
     margin: 0 auto;
 }
 
@@ -25,3 +25,11 @@ nav{
     padding: 25px 0;
 }
 
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+li a{
+    text-decoration: none;
+}
