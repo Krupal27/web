@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <p>Type Casting means One data type to converted other data type that is called type Casting</p>
+
+    <script>
+        
+        let marks = prompt("Enter Your Mark")
+            marks = Number.parseInt(marks) 
+
+        if (marks < 35) {
+            alert("your are not aligible")
+        } 
+        else if(marks > 35 && marks < 50){
+            alert("Good marks")
+        }
+        else if(marks > 50 && marks < 80){
+            alert("Average marks")
+        }
+        else if(marks > 80 && marks < 100){
+            alert("A++ marks")
+        }
+        else if(marks > 100){
+            alert("Error")
+        }
+        else {
+            alert("you are aligible")  
+        }
+
+        // console.log(marks);
+        // console.log(typeof marks);
+    </script>
+    
+</body>
+</html>
