@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="head"></h1>
+
+    <script>
+        let about = ["a","b","c","d","e"]
+        console.log(about);
+        console.log(about.length);
+        let taxt = ""
+
+        for (let index = 0; index < about.length; index++) {
+            taxt += about[index] + "<br>";
+            
+        }
+
+        document.getElementById("head").innerHTML = taxt
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 20%;
+            padding: 100px;
+            border-radius: 50%;
+            border: solid 5px black;
+        }
+
+        button{
+            margin: 40px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"> </div>
+    
+    <button>Click Now</button>
+
+    <script>
+        let box = document.querySelector(".box")
+        let btn = document.querySelector("button")
+        let flag = 0
+
+        btn.addEventListener("click", function () {
+            if (flag == 0) {
+                box.style.backgroundColor = "yellow"
+                console.log("Clicked");
+                flag = 1
+                
+            } else {
+                box.style.backgroundColor = "transparent"
+                console.log("Again");
+                flag = 0
+            }
+
+        })
+    </script>
+</body>
+</html>
