@@ -11,31 +11,28 @@
     <p>Type Casting means One data type to converted another data type that called type Casting</p>
 
     <script>
-        
-        let marks = prompt("Enter Your Mark")
-            marks = Number.parseInt(marks) 
+        let mark = prompt("Enter Your Name")
+        mark = Number.parseInt(mark)
 
-        if (marks < 35) {
-            alert("your are not aligible")
-        } 
-        else if(marks > 35 && marks < 50){
-            alert("Good marks")
+        if(mark < 35){
+            alert("try again")
         }
-        else if(marks > 50 && marks < 80){
-            alert("Average marks")
+        else if (mark > 50 && mark < 60) {
+            alert("Average")
         }
-        else if(marks > 80 && marks < 100){
-            alert("A++ marks")
+        else if (mark > 60 && mark < 80) {
+            alert("First Class")
         }
-        else if(marks > 100){
+        else if(mark > 80 && mark < 100){
+            alert("A++ Pass")
+        }
+        else if (mark > 100) {
             alert("Error")
         }
-        else {
-            alert("you are aligible")  
-        }
+        
 
-        // console.log(marks);
-        // console.log(typeof marks);
+        console.log(mark);
+        console.log(typeof mark);
     </script>
     
 </body>
