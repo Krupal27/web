@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form align="center" onsubmit="return myvalidation()"> 
+        <tr>
+            <td>
+                <label for="Username">Username</label>
+                <input type="text" name="" id="username">
+            </td>
+            <p id="UsernameError"></p>
+        </tr>
+        <tr>
+            <td>
+                <label for="Password">Password</label>
+                <input type="password" name="" id="password">
+            </td>
+            <p id="PasswordError"></p>
+        </tr>
+        <tr>
+            <td>
+                <label for="Mobile Number">Mobile Number</label>
+                <input type="tel" name="" id="MobileNumber">
+                <p id="Mobileno-Error"></p>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="submit"></td>
+        </tr>
+    </form>
+
+    <script>
+        let Username = document.getElementById("username");
+        let Password = document.getElementById("password");
+        let UsernameError = document.getElementById("UsernameError");
+        let PasswordError = document.getElementById("PasswordError");
+        let Mobileno = document.getElementById("MobileNumber");
+        let MobilenoError = document.getElementById("Mobileno-Error")
+
+        // console.log(PasswordError);
+
+        function myvalidation() {
+            // console.log("myvalidation");
+
+            if (Username.value === "") {
+                UsernameError.innerHTML = "This field is required"
+                event.preventDefault()
+            }
+            else{
+                UsernameError.innerHTML = "";
+                console.log(Username.value)
+                console.log(Username.value.length);
+            }
+
+            if (Password.value === "") {
+                PasswordError.innerHTML = "This field is required"
+                event.preventDefault()
+            }
+            else if(Password.value.length < 8){
+                PasswordError.innerHTML = "Max 8 Characters"
+                event.preventDefault()
+            }
+            else{
+                PasswordError.innerHTML = ""
+                console.log(Password.value)
+                console.log(Password.value.length)
+            }
+            if (Mobileno.value == "") {
+                MobilenoError.innerHTML = "Enter Your Number"
+                event.preventDefault()
+            }
+            else if(Mobileno.value.length < 10 && Mobileno.value.length != 11 ){
+                MobilenoError.innerHTML = "Enter Your valid Number"
+                event.preventDefault()
+            }
+            else{
+                MobilenoError.innerHTML = ""
+                console.log(Mobileno.value);
+                console.log(Mobileno.value.length);
+            }
+
+            return false
+        }
+
+    </script>
+    
+</body>
+</html>
