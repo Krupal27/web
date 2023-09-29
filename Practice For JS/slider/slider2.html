@@ -11,7 +11,7 @@
             box-sizing: border-box;
         }
         img{
-            width: 1000px;
+            width: 1050px;
         }
 
     </style>
@@ -26,28 +26,26 @@
         <img class="slider-img" src="img/Natural 3.jpg" alt="">
     </div>
     
-
     <script>
-        let SliderData = document.getElementsByClassName("slider-img");
-        console.log(SliderData);
-        let counter = 0
-        function slider(params) {
-            for (let index = 0; index < SliderData.length; index++) {
-                console.log(SliderData[index]);
-                SliderData[index].style.display = "none"
+        let sliderData = document.getElementsByClassName("slider-img");
+        console.log(sliderData);
+        let count = 0;
 
+        function slider() {
+            
+            for (let index = 0; index < sliderData.length; index++) {
+                console.log(sliderData[index]);
+                sliderData[index].style.display = "none"  
             }
-            if(counter >= SliderData.length){
-                counter = 0
-
+            if (count >= sliderData.length ) {
+                count = 1
             }
-            console.log(counter);
-            SliderData[counter].style.display = "block"
-            counter++;
-            setTimeout(slider , 2000)
+            console.log(count);
+            sliderData[count].style.display = "block"
+            count++;
+            setTimeout(slider, 2000)
         }
         slider()
-
     </script>
 </body>
 </html>
