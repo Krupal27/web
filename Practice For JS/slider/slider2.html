@@ -10,7 +10,11 @@
             padding: 0;
             box-sizing: border-box;
         }
-        img{
+        .slider-img{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .slider-img img{
             width: 1050px;
         }
 
@@ -27,23 +31,25 @@
     </div>
     
     <script>
-        let sliderData = document.getElementsByClassName("slider-img");
-        console.log(sliderData);
-        let count = 0;
+        let sliderData = document.getElementsByClassName("slider-img")
+        let count = 0
+
+        // console.log(sliderData);
 
         function slider() {
-            
+
             for (let index = 0; index < sliderData.length; index++) {
                 console.log(sliderData[index]);
-                sliderData[index].style.display = "none"  
+                sliderData[index].style.display = "none"
             }
-            if (count >= sliderData.length ) {
-                count = 1
+            if(count >= sliderData.length){
+                count = 0
             }
-            console.log(count);
+            // console.log(count);
             sliderData[count].style.display = "block"
             count++;
-            setTimeout(slider, 2000)
+
+            setTimeout(slider , 3000)
         }
         slider()
     </script>

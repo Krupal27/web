@@ -27,21 +27,21 @@
 
     <script>
         let sliderData = document.getElementsByClassName("slider-img")
-        console.log(sliderData);
-        let counter = 0
+        let count = 0
 
-        function slider() {
+        function slider(params) {
             for (let index = 0; index < sliderData.length; index++) {
                 console.log(sliderData[index]);
-                sliderData[index].style.display = "none"
+                sliderData[index].style.display = "none"   
             }
-            if (counter >= sliderData.length) {
-                counter = 0
+            if (count >= sliderData.lengt ) {
+                count = 1
             }
-            console.log(counter);
-            sliderData[counter].style.display = "block"
-            counter++;
-            setTimeout(slider , 3000)
+            // console.log(count);
+            sliderData[count].style.display = "block"
+            count++;
+    
+            setInterval(slider , 2000)
         }
         slider()
     </script>
