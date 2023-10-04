@@ -7,17 +7,19 @@
 </head>
 <body>
 
+    <!-- <button onclick="createParagraph()">click now !</button> -->
+
     <script>
-        let data = ["ankur", 12346 , "" , "aniket" , "sumit" , "harsh"]
+        let data = ["ankur", 12346 , "" , false, undefined , "aniket" , "sumit" , "harsh"];
 
         // array.forEach(element => {
             
         // });
 
-        data.forEach(function(maiandata){
-            document.write(maiandata + "<br>")
+        data.forEach(function(e){
+            // document.write(maiandata + "<br>")
+            document.write(e + "<br>")
         })
-        
 
         // let data  = ["sumit", "ravi" , "vijay", "suresh"]
 
@@ -26,11 +28,19 @@
         //     document.write(maiandata + "<br>")
         // })
 
-        // data.forEach(data2)
+        // data.forEach(data2) // Enicialisation
 
         // function data2 (maiandata){
         //     document.write(maiandata + "<br>")
         // }
+
+
+        // function createParagraph() {
+        //     const para = document.createElement("p");
+        //     para.textContent = "You clicked the button!";
+        //     document.body.appendChild(para);
+        // }
+
     </script>
     
 </body>
