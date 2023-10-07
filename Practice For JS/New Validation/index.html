@@ -30,7 +30,7 @@
             </td>
         </tr>
         <tr>
-            <td><input type="submit" value="submit"></td>
+            <td><input type="submit" value="submit" id="submit"></td>
         </tr>
     </form>
 
@@ -43,6 +43,16 @@
         let MobilenoError = document.getElementById("Mobileno-Error")
 
         // console.log(PasswordError);
+
+        // document.getElementById("username").addEventListener("blur", myfun)
+        // function myfun(){
+        //     UsernameError.innerHTML = "this field is req."
+        // }
+
+        // document.getElementById("password").addEventListener("blur", myfun1)
+        // function myfun1(){
+        //     PasswordError.innerHTML = "this field is req."
+        // }
 
         function myvalidation() {
             // console.log("myvalidation");
@@ -74,7 +84,7 @@
                 MobilenoError.innerHTML = "Enter Your Number"
                 event.preventDefault()
             }
-            else if(Mobileno.value.length < 10 && Mobileno.value.length != 11 ){
+            else if(Mobileno.value.length < 10){
                 MobilenoError.innerHTML = "Enter Your valid Number"
                 event.preventDefault()
             }
@@ -86,7 +96,11 @@
 
             return false
         }
-
+        // document.getElementById("submit").addEventListener("click", myfun)
+        // function myfun(){
+        //     confirm("are you sure")
+        //     window.location.href = "file:///d%3A/web/Practice%20For%20JS/Regular%20Experasion/regular%20exp.html?#";
+        // }
     </script>
     
 </body>
