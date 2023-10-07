@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration and Login</h2>
+        <div id="registration-form">
+            <h3>Register</h3>
+            <input type="text" id="name" placeholder="Name">
+            <br>
+            <input type="text" id="username" placeholder="Username">
+            <br>
+            <input type="password" id="password" placeholder="Password">
+            <br>
+            <input type="password" id="confirm-password" placeholder="Confirm Password">
+            <br>
+            <button onclick="registerUser()">Register</button>
+        </div>
+        <div id="login-form" style="display: none;">
+            <h3>Login</h3>
+            <input type="text" id="login-username" placeholder="Username">
+            <br>
+            <input type="password" id="login-password" placeholder="Password">
+            <br>
+            <button onclick="loginUser()">Login</button>
+        </div>
+        <div id="user-info" style="display: none;"></div>
+    </div>
+
+    <script>
+        // Define variables to store registration details
+        let registeredName = "";
+
+        function registerUser() {
+            const name = document.getElementById("name").value;
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm-password").value;
+
+            if (name === "" || username === "" || password === "" || confirmPassword === "") {
+                showMessage("All fields are required.");
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                showMessage("Passwords do not match.");
+                return;
+            }
+
+            if (!isPasswordValid(password)) {
+                showMessage("Password should be at least 8 characters long, start with a capital letter, and contain at least one special character.");
+                return;
+            }
+
+            let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$/;
+            if(yname.value == ''){
+                pera1.innerHTML = "Please Enter Your Name"
+                pera1.style.color = 'red'
+            }
+            else{
+                pera1.innerHTML = ""
+                pera1.style.color = 'green'
+                
+                
+
+            }
+
+            if(yemail.value.length < 6){
+                pera2.innerHTML = "more then 6 letter required"
+                pera2.style.color = 'red'
+                event.preventDefault()
+            }
+            else if (yemail.value != ''){
+                if(yemail.value.match(validRegex)){
+                    pera2.innerHTML = 'valid email address'
+                    pera2.style.color = "green"
+                    console.log(yemail.value);
+                    event.preventDefault()
+                }
+                else{
+                    pera2.innerHTML = "not valid email address"
+                    event.preventDefault()
+
+                }
+            }
+            else{
+                pera2.innerHTML = "ok"
+            }
+
+            if(ypassword.value.length < 8){
+                pera3.innerHTML = 'more then 8 letters required'
+                pera3.style.color = 'red'
+                event.preventDefault()
+            }
+            else if(ypassword.value != ''){
+                if(ypassword.value.search(/[0-9]/) == -1){
+                    pera3.innerHTML = "inclued atleast 1 numaric value" 
+                    event.preventDefault()
+                }
+                else if(ypassword.value.search(/[A-Z]/) == -1){
+                    pera3.innerHTML = "inclued atleast 1 uppercase character"
+                    event.preventDefault()
+                }
+                else if(ypassword.value.search(/[a-z]/) == -1){
+                    pera3.innerHTML = "inclued atleast 1 lowercase character"
+                    event.preventDefault()
+                }
+                else if(ypassword.value.search(/[!,@,#,$,%,^,&,*]/) == -1){
+                    pera3.innerHTML = "inclued atleast 1 special symbols (!,@,#,$,%,^,&,*)"
+                    event.preventDefault()
+                }
+                else{
+                    pera3.innerHTML = 'valid pssword'
+                    pera3.style.color = 'green'
+                    console.log(ypassword.value);
+                }
+            }
+            else{
+                pera3.innerHTML = ''
+            }
+            
+            if (yconfirmpassword.value != ypassword.value) {
+                pera4.innerHTML = 'password not matches';
+                pera4.style.color = 'red'
+                event.preventDefault()
+                
+            }
+            else {
+                pera4.innerHTML = 'password are match';
+                pera4.style.color = 'green'
+                console.log(yconfirmpassword.value);
+            }
+
+            // Store registration details
+            registeredName = name;
+
+            // After successful registration, show a success message as an alert and redirect to the login page.
+            alert("Registration successful. You can now log in.");
+            switchForm("login-form");
+        }
+
+        function isPasswordValid(password) {
+            // Password should be at least 8 characters long, start with a capital letter, and contain at least one special character.
+            const passwordPattern = /^(?=.[A-Z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            return passwordPattern.test(password);
+        }
+
+        function loginUser() {
+            const loginUsername = document.getElementById("login-username").value;
+            const loginPassword = document.getElementById("login-password").value;
+
+            // Here, you can add code to validate the login credentials against your server/database.
+
+            // For demonstration purposes, let's assume successful login with any username and password.
+            const loggedInName = registeredName; // Use the registered name after successful login.
+
+            // Hide the login form and display the user's name.
+            document.getElementById("login-form").style.display = "none";
+            document.getElementById("user-info").style.display = "block";
+            document.getElementById("user-info").textContent = `Welcome, ${loggedInName}!`;
+
+            // After a successful login, you can redirect the user to the desired page.
+        }
+
+        function showMessage(message, switchToLogin = false) {
+            const messageDiv = document.getElementById("message");
+            // messageDiv.textContent = message;
+            messageDiv.style.display = "block";
+
+            if (switchToLogin) {
+                switchForm("login-form");
+            }
+        }
+
+        function switchForm(formId) {
+            const registrationForm = document.getElementById("registration-form");
+            const loginForm = document.getElementById("login-form");
+
+            if (formId === "registration-form") {
+                registrationForm.style.display = "block";
+                loginForm.style.display = "none";
+            } else if (formId === "login-form") {
+                registrationForm.style.display = "none";
+                loginForm.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
