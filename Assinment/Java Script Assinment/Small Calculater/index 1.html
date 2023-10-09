@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <style>
+      input,
+      button {
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Simple Calculator</h2>
+    <div>
+      <input type="tel" id="num1" placeholder="Enter first number" />
+      <input type="tel" id="num2" placeholder="Enter second number" />
+    </div>
+
+    <div>
+      <button onclick="add()">Add</button>
+      <button onclick="subtract()">Subtract</button>
+      <button onclick="multiply()">Multiply</button>
+      <button onclick="divide()">Divide</button>
+    </div>
+
+    <h3>Result: <span id="result">0</span></h3>
+
+    <script>
+      let num2 = document.getElementById("num2");
+      let num1 = document.getElementById("num1");
+      let result = document.getElementById("result");
+      function add() {
+        result.innerHTML = num1.value * 1 + num2.value * 1;
+      }
+
+      function subtract() {
+        // var num1 = document.getElementById("num1").value;
+        // var num2 = document.getElementById("num2").value;
+        result.innerHTML = num1.value - num2.value;
+        // var sum = num1 - num2;
+        // document.getElementById("result").innerHTML = sum;
+      }
+
+      function multiply() {
+        // var num1 = document.getElementById("num1").value;
+        // var num2 = document.getElementById("num2").value;
+        var sum = num1 * num2;
+        document.getElementById("result").innerHTML = sum;
+      }
+
+      function divide() {
+        // var num1 = document.getElementById("num1").value;
+        // var num2 = document.getElementById("num2").value;
+        var sum = num1 / num2;
+        document.getElementById("result").innerHTML = sum;
+      }
+
+      // function add() {
+      //     var num1 = parseFloat(document.getElementById("num1").value);
+      //     var num2 = parseFloat(document.getElementById("num2").value);
+      //     var result = num1 + num2;
+      //     document.getElementById("result").innerText = result;
+      // }
+      // function subtract() {
+      //     var num1 = parseFloat(document.getElementById("num1").value);
+      //     var num2 = parseFloat(document.getElementById("num2").value);
+      //     var result = num1 - num2;
+      //     document.getElementById("result").innerText = result;
+      // }
+
+      // function multiply() {
+      //     var num1 = parseFloat(document.getElementById("num1").value);
+      //     var num2 = parseFloat(document.getElementById("num2").value);
+      //     var result = num1 * num2;
+      //     document.getElementById("result").innerText = result;
+      // }
+
+      // function divide() {
+      //     var num1 = parseFloat(document.getElementById("num1").value);
+      //     var num2 = parseFloat(document.getElementById("num2").value);
+      //     if (num2 !== 0) {
+      //         var result = num1 / num2;
+      //         document.getElementById("result").innerText = result;
+      //     } else {
+      //         document.getElementById("result").innerText = "Cannot divide by zero";
+      //     }
+      // }
+    </script>
+  </body>
+</html>
