@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        #box{
+            width: 50%;
+            margin: 0 auto;
+            border: solid 1px;
+            transition: 2s;
+        }
+        #btn{
+            display: block;
+            margin: 15px auto;
+            padding: 10px 20px;
+        }
+        .bg{
+            background-color: thistle;
+            color: black;
+        }
+        .padding{
+            padding: 100px;
+        }
+        .font{
+            font-size: 18px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="box">
+        <h2>jquery</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias accusantium repellendus cum deserunt earum perferendis, debitis harum unde veritatis dolore laboriosam reprehenderit quibusdam id maxime nesciunt in fugit placeat, ipsum nam sapiente. Sunt sequi, adipisci asperiores reiciendis ipsum doloribus libero beatae eos expedita dolorum autem nobis nesciunt at velit inventore.</p>
+    </div>
+    <button id="btn">Click Now</button>
+    
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $("#box").toggleClass("bg padding font")
+            })
+        })
+    </script>
+</body>
+</html>
