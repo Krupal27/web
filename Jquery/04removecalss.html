@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 50%;
+            margin: 0 auto;
+            border: solid 2px;
+            transition: 2s;
+        }
+        #btn{
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        #btn-2{
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        .bg{
+            background-color: coral;
+            color: darkred;
+        }
+        .padding{
+            padding: 100px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div id="box">
+        <h2>Jquary</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, iste at possimus nemo alias deleniti perferendis facere ipsa minus perspiciatis ullam ex molestiae ad laboriosam a aut dolor architecto vero cum quam? Dolorem illum culpa ullam nostrum eum at magnam, voluptatum odio vero tenetur! Repudiandae sed velit sint vitae laboriosam!</p>
+    </div>
+
+    <button id="btn">Click Now</button>
+    <button id="btn-2">Click Now</button>
+
+    <script>
+        $(document).ready(function () {
+            $('#btn').click(function (p) {
+                $('#box').addClass('bg padding font')
+            })
+            $("#btn-2").click(function () {
+                $("#box").removeClass("bg padding")
+            })
+        })
+    </script>
+</body>
+</html>
