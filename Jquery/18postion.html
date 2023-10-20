@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            transition: all 0.1s;
+            width: 500px;
+            background-color: antiquewhite;
+        }
+        /* .add{
+            padding: 100px;
+            background-color: aquamarine;
+        }
+        .box-2{
+            height: 100px;
+            background-color: aquamarine; */
+        /* } */
+    </style>
+            <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+    <!-- pixel to pixel to work too use position() and ofset()  -->
+
+    <div class="box">
+        <h2>jquery</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, deserunt blanditiis nam ad provident natus maiores repudiandae nisi, quibusdam, error impedit porro aperiam similique ipsum dolorum molestias iusto eaque quidem!</p>
+    </div>
+    <!-- <button class="btn">click now</button> -->
+    <!-- <div class="box-2"> -->
+        <!-- <h3>Hello</h3> -->
+    <!-- </div> -->
+    
+    <script>
+        $(document).ready(function () {
+            console.log($(".box h2").position());
+            // $(".btn").click(function () {
+            //     // console.log("called");
+            //     $(".box h2").clone().prependTo(".box-2")
+            //     $(".box p").clone().appendTo(".box-2")
+            // })
+        })
+
+
+    </script>
+</body>
+</html>

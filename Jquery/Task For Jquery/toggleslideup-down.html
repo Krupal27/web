@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flip,#panal{
+            padding: 5px;
+            font-size: 20px;
+            text-align: center;
+            background-color: #555;
+            color: #fff;
+            border: #555 solid 1px;
+            border-radius: 4px;
+        }
+        #panal{
+            padding: 100px;
+            display: none;
+        }
+    </style>
+     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </head>
+</head>
+<body>
+
+    <div>
+        <button id="Stop">Stop</button>
+    </div>
+    <div id="flip">Click to slide up&down</div>
+    <div id="panal">Hello!!</div>
+    
+
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                // console.log("called");
+                $("#xpanal").slideToggle(5000)
+            })
+        })
+    </script>
+</body>
+</html>
