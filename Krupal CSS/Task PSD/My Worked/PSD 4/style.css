@@ -7,6 +7,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto"; 
+    transition: all .5s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -139,43 +144,47 @@ input{
 }
 
 hr{
-    width: 50%;
+    width: 27%;
     height: 3px;
     background-color: #3d5f00;
     margin: 6px 0;  
 }
 
 .sec-one p{
+    font-size: 21px;
     color: #3d5f00;
-    font-size: 25px;
-    margin: 10px 0;
+    width: 45%;
+    font-weight: 400;
+    font-family: robot;
 }
 
 .btn-1{
-    padding: 15px 30px;
+    padding: 15px 25px;
+    font-size: 20px;
     border: none;
-    border-radius: 20px 0 20px 0;
+    border-radius: 0 17px;
     background-color: green;
     color: #fff;
 }
 
 .btn-2{
-    margin: 0 20px;
-    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 20px;
+    padding: 15px 25px;
     border: none;
-    border-radius: 20px 0 20px 0;
+    border-radius: 0 17px;
     background-color: green;
     color: #fff;
 }
 
 .btn-1:hover{
     transition: 1s;
-    border-radius: 0 20px 0 20px;
+    border-radius: 17px 0;
 }
 
 .btn-2:hover{
     transition: 1s;
-    border-radius: 0 20px 0 20px;
+    border-radius: 17px 0;
 }
 
 .sec-two{

@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.align {
+    align-items: center;
+}
+
+.jce{
+    justify-content: space-around;
+}
+
+.jcs {
+    justify-content: space-between;
+}
+
+.col-75{
+    width: 75%;
+}
+
+.col-25{
+    width: 25%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.col-33 {
+    width: 33%;
+}
+
+.col-16 {
+    width: 16%;
+}
+
+.col-25 {
+    width: 20%;
+}
+
+.po-rel{
+    position: relative;
+}
+
+.po-ab{
+    position: absolute;
+}
+
+.navbar {
+    /*  padding: 20px 0; */
+    /* width: 1400px; */
+    margin: 0 auto;
+}
+
+.first-nav {
+    padding: 5px 0;
+    background-color: rgba(220, 213, 213, 0.347);
+}
+
+.head-info i,
+h3 {
+    font-size: 20px;
+}
+
+.head-info h3 {
+    font-weight: 400;
+}
+
+.head-info a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #111;
+}
+
+.head-info .fa-solid {
+    margin-right: 10px;
+    color: #004f64;
+    /* color: black; */
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.head-social a {
+    text-decoration: none;
+    color: #111;
+    font-size: 23px;
+    margin: 0 5px;
+}
+
+.second-nav {
+    padding: 30px 0;
+}
+
+.logo {
+    width: 59%;
+}
+
+.logo img {
+    display: inline;
+    width: 50%;
+}
+
+.second-nav .icon {
+    color: #004f64;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.enquiry-box a {
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #004f64;
+    color: #fff;
+}
+
+.enquiry-box a:hover {
+    color: #8adc2f;
+}
+
+.thred-nav {
+    background-color: #004f64;
+    padding: 20px 0;
+}
+
+/* .Nav-team{
+    padding-top: 50px;
+} */
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 17px;
+    transition: 0.2s;
+}
+
+.links ul>li:after {
+    content: "|";
+    width: 0;
+    height: 2px;
+    color: #ffffff59;
+}
+
+.links ul>li:nth-child(6):after {
+    display: none;
+}
+
+.links a:hover {
+    color: #8adc2f;
+}
+
+.about-hospital{
+    padding: 30px 0;
+}
+
+.about-hospital{
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 110px; */
+}
+
+.about-hospital h3{
+    color: white;
+    font-size: 25px;
+}
+.about-hospital h5,h6{
+    font-size: 15px;
+    /* margin-left: 10px; */
+}
+
+.links-hospital a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.Ashish::before{
+    color: #ccc;
+    content: "/\00a0";
+}
+
+.Doctor::before {
+    color: #ccc;
+    content: "/\00a0";
+}
+
+.Home:hover{
+    color: rgba(28, 28, 185, 0.86);
+    border-bottom: solid 2px;
+}
+
+.sec-one{
+    padding: 50px 0;
+}
+
+.sec-one img{
+    width: 100%;
+    padding: 3px;
+    border: solid 5px rgba(72, 127, 255, 0.192);
+}
+
+.main-text ul > li {
+    position: relative;
+}
+
+.main-text p{
+    padding: 10px 0;
+    line-height: 22px;
+}
+
+.main-text h3{
+    padding: 10px 0;
+    font-weight: 400;
+}
+
+.main-text ul > li:before{
+    position: absolute;
+    font-size: 15px;
+    top: 3px;
+    left: -20px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+    font-weight: 900;
+    color: #004f64;
+    margin-right: 20px;
+}
+
+.main-text ul li{
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 35px;
+}
+
+.col-75 h5{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.col-75 h4{
+    color: #026884;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: .5px;
+    position: relative;
+    padding: 10px 0;
+}
+
+.col-75 h4:before {
+    position: absolute;
+    font-size: 18px;
+    top: px;
+    left: -25px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0a4";
+    font-weight: 900;
+}
+
+footer {
+    padding: 50px 0;
+    font-size: 13px;
+    background-color: #273238;
+    position: relative;
+}
+
+footer img {
+    width: 70%;
+}
+
+footer h3 {
+    color: #d1d3d2;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer h3:not(.no-underline):before {
+    background: #d1d3d2;
+    top: 25px;
+    left: "";
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 20px;
+}
+
+footer .list {
+    padding: 20px 0;
+}
+
+footer ul li {
+    display: block;
+    margin: 5px 0;
+}
+
+.list a {
+    text-decoration: none;
+    color: #d1d3d2;
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 8px;
+}
+
+.list a:hover {
+    color: rgb(58, 173, 231);
+}
+
+footer ul.list li:before {
+    font-size: 15px;
+    top: 1px;
+    left: "";
+    font-family: "Font Awesome 5 Free";
+    content: "\f061";
+    font-weight: 900;
+    color: #d0d2d1;
+}
+
+footer .fa-industry,
+.fa-location-pin,
+.fa-message,
+.fa-mobile {
+    font-size: 20px;
+    /* padding: 30px 0; */
+    color: #fff;
+    padding-right: 8px;
+}
+
+footer span {
+    font-size: 15px;
+    color: #d1d3d2;
+}
+
+.address-taxt {
+    padding: 30px 0;
+}
+
+.Contact-text {
+    padding: 30px 0;
+}
+
+footer h4 {
+    padding-bottom: 25px;
+}
+
+.fa-message {
+    padding-bottom: 25px;
+}
+
+.btn-call{
+    position: fixed;
+    cursor: pointer;
+    display: block;
+    bottom: 20px;
+    right: 70px;
+    padding: 20px;
+    color: white;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.Fixed-contact{
+    position: fixed;
+    cursor: pointer;
+    bottom: 20px;
+    right: 10px;
+    padding: 20px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        // var data = 20
+        // console.log(data); 
+
+        {
+            var data = 50 // Global variable
+            // let data = 50 // local variable
+        }
+        // console.log(data);
+        // console.log(data);
+
+
+        // var name = "Krupal"
+        function add() { //function scope 
+            let address = "Rajkot"
+
+            function sum() {
+                // console.log(name , address);
+                let a = '50'
+                function add1() {
+                    console.log(address, a);
+                } 
+                add1()
+            }
+            sum()    
+            // console.log(address);
+        }
+        add()
+        </script>
+</body>
+</html>

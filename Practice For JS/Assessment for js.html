@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking Form</title>
+    <style>
+        input{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurant Booking Form</h1>
+    <form id="bookingForm">
+        <label for="bookingType">Choice of booking:</label>
+        <select id="bookingType" name="bookingType" onchange="showOptions()">
+            <option value="fullDay">Full day booking</option>
+            <option value="halfDay">Half day booking</option>
+            <option value="hourly">Hourly booking</option>
+        </select>
+
+        <div id="dateOption">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <div id="slotOption" style="display:none;">
+            <label for="slot">Slot:</label>
+            <select id="slot" name="slot">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select>
+        </div>
+
+        <div id="timeOption" style="display:none;">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+        </div>
+
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName" required>
+
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" id="mobileNumber" name="mobileNumber" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="numOfPersons">No of person:</label>
+        <input type="number" id="numOfPersons" name="numOfPersons" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function showOptions() {
+            const bookingType = document.getElementById("bookingType").value;
+            const dateOption = document.getElementById("dateOption");
+            const slotOption = document.getElementById("slotOption");
+            const timeOption = document.getElementById("timeOption");
+
+            if (bookingType === "fullDay") {
+                dateOption.style.display = "block";
+                slotOption.style.display = "none";
+                timeOption.style.display = "none";
+            } else if (bookingType === "halfDay") {
+                dateOption.style.display = "block";
+                slotOption.style.display = "block";
+                timeOption.style.display = "none";
+            } else if (bookingType === "hourly") {
+                dateOption.style.display = "block";
+                slotOption.style.display = "none";
+                timeOption.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

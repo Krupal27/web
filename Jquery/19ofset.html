@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            background-color: antiquewhite;
+        }
+    </style>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+    <!-- pixel to pixel to work too use position() and ofset()  -->
+
+    <div class="box">
+        <h2>jquery</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, debitis nam cumque, hic, quis soluta omnis voluptatibus itaque illo ullam cum inventore eos eligendi ex nihil sit at suscipit sequi?</p>
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            console.log($(".box h2").offset());
+        })
+    </script>
+</body>
+</html>

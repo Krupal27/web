@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn">Click Now</button>
+    <p class="pera"></p>
+
+    <script>
+       let btn = document.getElementById("btn");
+       let pera = document.querySelector(".pera")
+
+       btn.addEventListener("click", () =>  {
+        pera.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere, ex nec faucibus eleifend, justo quam gravida tellus, nec faucibus lacus ligula sit amet sem. Ut lobortis sem nisl, ac auctor tellus molestie sit amet."
+       })
+    </script>
+    
+</body>
+</html>

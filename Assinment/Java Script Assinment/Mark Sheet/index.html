@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Sheet</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #Wrapper{
+            /* display: flex; */
+            text-align: center;
+            padding: 50px 0;
+        }
+        .container{
+            width: 1200px;
+            margin: 20px auto;
+        }
+        .row{
+            display: flex;
+        }
+        .jcs{
+            justify-content: space-evenly;
+        }
+        .col_50 Ol li{
+            margin: 10px;
+            font-size: 20px;
+        }
+        ol li{
+            padding: 5px 20px;
+        }
+        .col_50 input{
+            display: block;
+            margin: 13px 0;
+            width: 200px;
+            padding: 5px 20px;
+        }
+        h3{
+            display: inline;
+            margin-right: 70px;
+        }
+        .btn{
+            padding: 10px 20px;
+            font-size: 17px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="Wrapper">
+        <h3>Student Marks Sheet</h3>
+        <div class="container row jcs">
+            <div class="col_50">
+                <ol>
+                    <li>C Language</li>
+                    <li>C++ Language</li>
+                    <li>Database</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Core Java</li>
+                    <li>Python</li>
+                </ol>
+            </div>
+            <div class="col_50">
+                <input type="tel" class="" name="" id="addition1">
+                <input type="tel" class="" name="" id="addition2">
+                <input type="tel" class="" name="" id="addition3">
+                <input type="tel" class="" name="" id="addition4">
+                <input type="tel" class="" name="" id="addition5">
+                <input type="tel" class="" name="" id="addition6">
+                <input type="tel" class="" name="" id="addition7">
+            </div>
+        </div>
+        <div class="container">
+            <h3>Total :  <span id="all-total">0</span></h3>
+            <h3>Percentage : <span id="percentage">0</span>%</h3>
+        </div>
+        <div class="">
+            <button class="btn">=</button>
+        </div>  
+    </div>
+    
+    <script>
+        // console.log(typeof total7);
+        let btn = document.querySelector(".btn")
+        let getResult = document.getElementById("all-total")
+        let Percentage = document.getElementById("percentage")
+        
+        btn.addEventListener("click" ,  () => {
+            let total1 = document.getElementById("addition1").value; // parseFloat() , Too Converte String to Numner.
+            let total2 = document.getElementById("addition2").value;
+            let total3 = document.getElementById("addition3").value;
+            let total4 = document.getElementById("addition4").value;
+            let total5 = document.getElementById("addition5").value;
+            let total6 = document.getElementById("addition6").value;
+            let total7 = document.getElementById("addition7").value;
+            // getResult.innerHTML = Number(total1)+Number(total2)+Number(total3)+Number(total4)+Number(total5)+Number(total6)+Number(total7);
+            // getResult.innerHTML = total1 * 1+total2 * 1+total3 * 1;
+            getResult.innerHTML = parseFloat(total1)+parseFloat(total2)+parseFloat(total3)+parseFloat(total4)+parseFloat(total5)+parseFloat(total6)+parseFloat(total7);
+            Percentage.innerHTML = (getResult.innerHTML * 100)/700;
+        })
+    </script>
+
+</body>
+</html>

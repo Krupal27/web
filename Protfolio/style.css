@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@800&family=Allura&family=Gabarito:wght@500&family=Great+Vibes&family=Jaldi&family=Lato:wght@100;300;400&family=Nanum+Gothic&family=Noto+Serif&family=Nunito:wght@300&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Pacifico&family=Poppins:wght@300;400&family=Preahvihear&family=Roboto:wght@300;400&family=Sacramento&family=Signika+Negative:wght@300&family=Source+Code+Pro:wght@300&family=Source+Sans+3&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+.jcs{
+    justify-content: space-between;
+}
+.align{
+    align-items: center;
+}
+.col-60{
+    width: 60%;
+}
+.col-40{
+    width: 40%;
+}
+nav{
+    background-color: black;
+    padding: 15px 0;
+}
+.logo img{
+    width: 50%;
+}
+.links li{
+    list-style: none;
+    display: inline-block;
+}
+.links a{
+    /* float: right; */
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: white;
+    margin: 0 25px;
+}
+.links a:hover{
+    /* transition: 1ms; */
+    border-bottom: solid 3px deepskyblue;
+    color: deepskyblue;
+    /* transform: scale(50%); */
+}
+.sec-one{
+    padding: 100px 0;
+    background-color: black;
+}
+.sec-one{
+    font-size: 25px;
+}
+.sec-one h4{
+    color: rgb(4, 224, 150);
+    font-size: 50px;
+}
+.sec-one img{
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 70px;
+}
+.sec-one h5{
+    font-size: 45px;
+    color: rgb(75, 198, 239);
+}
+.col-60 p {
+    font-size: 20px;
+    color: rgb(206, 237, 141);
+}
+
+

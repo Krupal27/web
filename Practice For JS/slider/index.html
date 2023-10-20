@@ -11,7 +11,8 @@
             box-sizing: border-box;
         }
         img{
-            width: 1000px;
+            width: 700px;
+            margin: 50px auto;
         }
     </style>
 </head>
@@ -34,14 +35,14 @@
                 console.log(sliderData[index]);
                 sliderData[index].style.display = "none"   
             }
-            if (count >= sliderData.lengt ) {
+            if (count >= sliderData.length ) {
                 count = 1
             }
             // console.log(count);
             sliderData[count].style.display = "block"
             count++;
     
-            setInterval(slider , 2000)
+            setTimeout(slider , 2000)
         }
         slider()
     </script>
