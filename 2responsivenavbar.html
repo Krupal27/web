@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <style>
+            @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@800&family=Allura&family=Dela+Gothic+One&family=Gabarito:wght@500&family=Great+Vibes&family=Jaldi&family=Lato:wght@100;300;400&family=Montserrat&family=Montserrat+Alternates&family=Nanum+Gothic&family=Noto+Serif&family=Nunito:wght@300&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Pacifico&family=Poppins:wght@300;400&family=Preahvihear&family=Roboto:wght@300;400&family=Sacramento&family=Signika+Negative:wght@300&family=Source+Code+Pro:wght@300&family=Source+Sans+3&family=Ubuntu:wght@300&family=Zeyada&display=swap');
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
         }
         .container{
-            width: 1300px;
+            width: 1200px;
             margin: 0 auto;
         }
         .row{
@@ -27,57 +27,51 @@
             align-items: center;
         }
         header{
-            padding: 30px 0;
-            background-color: turquoise;
-        }
-        .navbar{
-            transition: all 1s ease-in-out;
+            padding: 20px 0;
+            background-color: aquamarine;
         }
         .logo{
+            font-family: 'Montserrat', sans-serif;
             font-size: 20px;
-            color: black;
         }
         .links{
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
         .links ul li{
             list-style: none;
             display: inline-block;
         }
         .links li a{
-            text-decoration: none;
+            /* display: none; */
             color: black;
-            margin: 0 20px;
-            font-size: 20px;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0 15px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
         }
-        /* .links li a:hover{
-            background-color: rgb(216, 225, 225);
-            transition: all 0.3s ease-in-out;
-            border-radius: 8px;
-        } */
-        #hamburger{
-            font-size: 25px;
+        .hemburger{
+            font-size: 22px;
             display: none;
         }
-        .navbar .active{
-            left: 0px;
+        nav .add{
+            left: 0px;            
         }
         @media(min-width:576px){
             .container{
                 width: 565px;
             }
-            #hamburger{
+            #hemburger{
+                font-size: 22px;
                 display: block;
                 cursor: pointer;
             }
             .links{
                 position: absolute;
-                /* top: 93px; */
-                top: 93px;
+                top: 75px;
                 left: -180px;
-                /* width: 40%; */
                 height: 50%;
-                background-color: turquoise;
+                background-color: aquamarine;
             }
             .links ul li{
                 display: block;
@@ -88,18 +82,17 @@
             .container{
                 width: 750px;
             }
-            #hamburger{
-                display:block;
+            #hemburger{
+                display: block;
                 cursor: pointer;
+                font-size: 22px;
             }
             .links{
                 position: absolute;
-                /* top: 93px; */
-                top: 93px;
-                /* left: -180px; */
-                /* width: 40%; */
+                top: 75px;
+                left: -180px;
                 height: 50%;
-                background-color: turquoise;
+                background-color: aquamarine;
             }
             .links ul li{
                 display: block;
@@ -110,42 +103,33 @@
             .container{
                 width: 980px;
             }
-            #hamburger{
-                display: none;
-            }
             nav{
                 display: block;
-                /* border: 5px solid; */
             }
-            .links ul li a{
-                display: inline;
-                /* border: 5px solid; */
+            #hemburger{
+                display: none;
             }
             .links{
+                display: inline;
                 position: static;
-                display: inline;
-                background-color: transparenta;
-                /* top: 93px; */
-                top: 0px;
-                /* left: -180px; */
-                /* width: 40%; */
-                /* height: 50%; */
-                /* background-color: rgba(64, 181, 224, 0.559); */
+                top: 0;
+                background-color: aquamarine;
             }
-            
-            .links ul li{
-                display: inline;
+            .links li a {
+                margin: 0;
             }
+            .links ul li {
+                display: inline;
+                margin: 10px 20px;
+            }
+
         }
         @media(min-width:1200px){
             .container{
                 width: 1200px;
             }
-            #hamburger{
+            #hemburger{
                 display: none;
-            }
-            .links ul li{
-                display: inline;
             }
         }
     </style>
@@ -154,31 +138,37 @@
 
     <header>
         <div class="container">
-            <nav class="navbar row jcs align">
+            <nav class="row align jcs">
                 <div class="logo">
-                    <h2>logo</h2>
+                    <h2>Logo</h2>
                 </div>
                 <div class="links">
                     <ul>
-                        <li><a href="#" >Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#">About Us</a></li>
-                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Products</a></li>
                         <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help</a></li>
                     </ul>
                 </div>
-                <div id="hamburger">
+                <div id="hemburger">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </nav>
         </div>
     </header>
-    
-
     <script>
-        document.getElementById("hamburger").addEventListener("click", (e) =>{
-            console.log("called");
-            e.preventDefault()
-            document.querySelector('.links').classList.toggle('active')
+
+        // document.getElementById("hemburger").addEventListener("click", (e) => {
+        //     console.log("called");
+        //     e.preventDefault()
+        //     document.querySelector(".links").classList.toggle('add')
+        // })
+        $(document).ready(function () {
+            $("#hemburger").click(function (e) {
+                e.preventDefault()
+                $(".links").toggleClass("add")
+            })
         })
     </script>
 </body>

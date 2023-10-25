@@ -272,9 +272,15 @@ footer ul.list li:before {
 }
 
 .fa-solid{
-    font-size: 20px;
-    /* padding: 30px 0; */
+    /* font-size: 20px; */
     color: #d1d3d2;
+}
+
+.address-taxt i{
+    padding-right: 8px;
+}
+
+.Contact-text i{
     padding-right: 8px;
 }
 
@@ -298,5 +304,30 @@ footer h4{
 .fa-message{
     padding-bottom: 25px;
 }
+
+.btn-call{
+    font-size: auto;
+    position: fixed;
+    cursor: pointer;
+    display: block;
+    bottom: 20px;
+    right: 70px;
+    padding: 20px;
+    color: white;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.Fixed-contact{
+    position: fixed;
+    cursor: pointer;
+    bottom: 20px;
+    right: 10px;
+    padding: 20px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+}
+
 
 

@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             display: flex;
             /* display: grid; */
             justify-content: center;
             align-items: center;
         }
-        form{
+
+        form {
             padding: 100px;
         }
-        input{
+
+        input {
             width: 250px;
             padding: 10px 20px;
             font-weight: 600;
             letter-spacing: 1.5px;
         }
-        button{
+
+        button {
             cursor: pointer;
             display: block;
             margin: 0 auto;
@@ -34,6 +38,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <form action="#" onclick="validform()">
@@ -51,7 +56,7 @@
             <!-- <label for="password">Password</label> -->
             <input placeholder="Enter Your password" type="password" name="" id="password">
             <p id="pera3"></p>
-        </div> 
+        </div>
         <div>
             <!-- <label for="confirm-password">Confirm-password</label> -->
             <input placeholder="confirm-password" type="password" name="" id="confirm-password">
@@ -76,75 +81,76 @@
 
         function validform() {
             let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$/;
-            if(yname.value == ''){
+            if (yname.value == '') {
                 pera1.innerHTML = "Please Enter Your Name"
                 pera1.style.color = 'red'
+                event.preventDefault()
             }
-            else{
-                pera1.innerHTML = ""
+            else {
+                pera1.innerHTML = "Valid Name"
                 pera1.style.color = 'green'
-                
+
             }
 
-            if(yemail.value.length < 6){
+            if (yemail.value.length < 6) {
                 pera2.innerHTML = "more then 6 letter required"
                 pera2.style.color = 'red'
                 event.preventDefault()
             }
-            else if (yemail.value != ''){
-                if(yemail.value.match(validRegex)){
+            else if (yemail.value != '') {
+                if (yemail.value.match(validRegex)) {
                     pera2.innerHTML = 'valid email address'
                     pera2.style.color = "green"
                     console.log(yemail.value);
-                    event.preventDefault()
+                    // event.preventDefault()
                 }
-                else{
+                else {
                     pera2.innerHTML = "not valid email address"
                     event.preventDefault()
 
                 }
             }
-            else{
+            else {
                 pera2.innerHTML = "ok"
             }
 
-            if(ypassword.value.length < 8){
+            if (ypassword.value.length < 8) {
                 pera3.innerHTML = 'more then 8 letters required'
                 pera3.style.color = 'red'
                 event.preventDefault()
             }
-            else if(ypassword.value != ''){
-                if(ypassword.value.search(/[0-9]/) == -1){
-                    pera3.innerHTML = "inclued atleast 1 numaric value" 
+            else if (ypassword.value != '') {
+                if (ypassword.value.search(/[0-9]/) == -1) {
+                    pera3.innerHTML = "inclued atleast 1 numaric value"
                     event.preventDefault()
                 }
-                else if(ypassword.value.search(/[A-Z]/) == -1){
+                else if (ypassword.value.search(/[A-Z]/) == -1) {
                     pera3.innerHTML = "inclued atleast 1 uppercase character"
                     event.preventDefault()
                 }
-                else if(ypassword.value.search(/[a-z]/) == -1){
+                else if (ypassword.value.search(/[a-z]/) == -1) {
                     pera3.innerHTML = "inclued atleast 1 lowercase character"
                     event.preventDefault()
                 }
-                else if(ypassword.value.search(/[!,@,#,$,%,^,&,*]/) == -1){
+                else if (ypassword.value.search(/[!,@,#,$,%,^,&,*]/) == -1) {
                     pera3.innerHTML = "inclued atleast 1 special symbols (!,@,#,$,%,^,&,*)"
                     event.preventDefault()
                 }
-                else{
+                else {
                     pera3.innerHTML = 'valid pssword'
                     pera3.style.color = 'green'
                     console.log(ypassword.value);
                 }
             }
-            else{
+            else {
                 pera3.innerHTML = ''
             }
-            
+
             if (yconfirmpassword.value != ypassword.value) {
                 pera4.innerHTML = 'password not matches';
                 pera4.style.color = 'red'
                 event.preventDefault()
-                
+
             }
             else {
                 pera4.innerHTML = 'password are match';
@@ -152,9 +158,10 @@
                 console.log(yconfirmpassword.value);
             }
             // return false
-        }        
+        }
 
-    
+
     </script>
 </body>
+
 </html>

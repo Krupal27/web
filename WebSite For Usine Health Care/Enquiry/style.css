@@ -322,3 +322,27 @@ footer h4 {
 .fa-message {
     padding-bottom: 25px;
 }
+
+.btn-call{
+    font-size: auto;
+    position: fixed;
+    cursor: pointer;
+    display: block;
+    bottom: 20px;
+    right: 75px;
+    padding: 20px;
+    color: white;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.Fixed-contact{
+    position: fixed;
+    cursor: pointer;
+    bottom: 20px;
+    right: 10px;
+    padding: 20px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+}
