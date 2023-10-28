@@ -117,6 +117,24 @@ document.getElementById("Dr.Kishan").addEventListener("click", () => {
   window.location.href="file:///d%3A/web/WebSite%20For%20Usine%20Health%20Care/10%20Dr.%20Kishan%20Bhensdadiya/index.html"
 })
 
-document.getElementsByClassName("swiper-slide").addEventListener("click", () => {
+document.getElementById("img-1").addEventListener("click", () => {
+  window.location.href= "file:///d%3A/web/WebSite%20For%20Usine%20Health%20Care/News%20%26%20Events/index.html"
+})
+document.getElementById("img-2").addEventListener("click", () => {
+  window.location.href= "file:///d%3A/web/WebSite%20For%20Usine%20Health%20Care/News%20%26%20Events/index.html"
+})
+document.getElementById("img-3").addEventListener("click", () => {
+  window.location.href= "file:///d%3A/web/WebSite%20For%20Usine%20Health%20Care/News%20%26%20Events/index.html"
+})
+document.getElementById("img-4").addEventListener("click", () => {
+  window.location.href= "file:///d%3A/web/WebSite%20For%20Usine%20Health%20Care/News%20%26%20Events/index.html"
+})
+document.getElementById("img-5").addEventListener("click", () => {
+  window.location.href= "file:///d%3A/web/WebSite%20For%20Usine%20Health%20Care/News%20%26%20Events/index.html"
+})
+document.getElementById("img-6").addEventListener("click", () => {
+  window.location.href= "file:///d%3A/web/WebSite%20For%20Usine%20Health%20Care/News%20%26%20Events/index.html"
+})
+document.getElementById("img-7").addEventListener("click", () => {
   window.location.href= "file:///d%3A/web/WebSite%20For%20Usine%20Health%20Care/News%20%26%20Events/index.html"
 })

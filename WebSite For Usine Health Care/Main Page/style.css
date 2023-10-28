@@ -292,7 +292,10 @@ body {
     object-fit: cover;
 }
 
-
+/* .swiper-slide:hover{
+    transform: scale(50%);
+    transition: all .05s;
+} */
 
 .swiper-slide h3 {
     font-size: 25px;
