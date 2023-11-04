@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@800&family=Allura&family=Dela+Gothic+One&family=Gabarito:wght@500&family=Great+Vibes&family=Jaldi&family=Lato:wght@100;300;400&family=Montserrat&family=Montserrat+Alternates&family=Nanum+Gothic&family=Noto+Serif&family=Nunito:wght@300&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Pacifico&family=Poppins:wght@300;400&family=Preahvihear&family=Roboto:wght@300;400&family=Sacramento&family=Signika+Negative:wght@300&family=Source+Code+Pro:wght@300&family=Source+Sans+3&family=Ubuntu:wght@300&family=Zeyada&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .row{
+            display: flex;
+        }
+        .jcs{
+            justify-content: space-between;
+        }
+        .align{
+            align-items: center;
+        }
+        header{
+            padding: 20px 0;
+            background-color: aquamarine;
+        }
+        .logo{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+        }
+        .links{
+            transition: all 0.2s ease;
+        }
+        .links ul li{
+            list-style: none;
+            display: inline-block;
+        }
+        .links li a{
+            /* display: none; */
+            color: black;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0 15px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hemburger{
+            font-size: 22px;
+            display: none;
+        }
+        nav .add{
+            left: 0px;            
+        }
+        @media(min-width:576px){
+            .container{
+                width: 565px;
+            }
+            #hemburger{
+                font-size: 22px;
+                display: block;
+                cursor: pointer;
+            }
+            .links{
+                position: absolute;
+                top: 75px;
+                left: -180px;
+                height: 50%;
+                background-color: aquamarine;
+            }
+            .links ul li{
+                display: block;
+                margin: 10px 20px;
+            }
+        }
+        @media(min-width:768px){
+            .container{
+                width: 750px;
+            }
+            #hemburger{
+                display: block;
+                cursor: pointer;
+                font-size: 22px;
+            }
+            .links{
+                position: absolute;
+                top: 75px;
+                left: -180px;
+                height: 50%;
+                background-color: aquamarine;
+            }
+            .links ul li{
+                display: block;
+                margin: 10px 20px;
+            }
+        }
+        @media(min-width:992px){
+            .container{
+                width: 980px;
+            }
+            nav{
+                display: block;
+            }
+            #hemburger{
+                display: none;
+            }
+            .links{
+                display: inline;
+                position: static;
+                top: 0;
+                background-color: aquamarine;
+            }
+            .links li a {
+                margin: 0;
+            }
+            .links ul li {
+                display: inline;
+                margin: 10px 20px;
+            }
+
+        }
+        @media(min-width:1200px){
+            .container{
+                width: 1200px;
+            }
+            #hemburger{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="row align jcs">
+                <div class="logo">
+                    <h2>Logo</h2>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div id="hemburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script>
+
+        // document.getElementById("hemburger").addEventListener("click", (e) => {
+        //     console.log("called");
+        //     e.preventDefault()
+        //     document.querySelector(".links").classList.toggle('add')
+        // })
+        $(document).ready(function () {
+            $("#hemburger").click(function (e) {
+                e.preventDefault()
+                $(".links").toggleClass("add")
+            })
+        })
+    </script>
+</body>
+</html>
