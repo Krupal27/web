@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+    </style>
+</head>
+
+<body class=".bg-dark-subtle">
+    <div class="container my-4">
+        <form action="#">
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Frist Name : </label>
+                <div class="col-sm-10">
+                    <input required id="Fname" placeholder="Enter First Name" type="text" class="form-control">
+                    <!-- <p id="p1"></p> -->
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Last Name : </label>
+                <div class="col-sm-10">
+                    <input placeholder="Enter Last Name" id="Lname" type="text" class="form-control">
+                    <!-- <p id="p2"></p> -->
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-sm-2 col-form-label">Email : </label>
+                <div class="col-sm-10">
+                    <input placeholder="Enter Your E-mail" id="Email" type="Email" class="form-control">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Number : </label>
+                <div class="col-sm-10">
+                    <input placeholder="Enter Your Number" id="Mnumber" type="tel" class="form-control">
+                </div>
+            </div>
+            <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Gendr</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            Female
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Date : </label>
+                <div class="col-sm-10">
+                    <input placeholder="Enter Your Number" type="date" class="form-control">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Address : </label>
+                <div class="col-sm-10">
+                    <textarea name="" id="" cols="143" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">City : </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Area PIN : </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">State: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-sm-2 col-form-label">Qualification :</label>
+                <div class="col-sm-10">
+                    <select class="form-select w-50 form-select-md mb-3" aria-label="select example">
+                        <option selected>Select Qualification</option>
+                        <option value="1">BCA</option>
+                        <option value="2">MCA</option>
+                        <option value="3">BE</option>
+                        <option value="3">B.Tech</option>
+                        <option value="3">M.Tech</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="Specialization" class="col-sm-2 col-form-label">Specialization : </label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <label for="Computer Scince">Computer Scince</label>
+                        <input class="form-check-input" type="checkbox">
+                    </div>
+                    <div class="form-check">
+                        <label for="Information Technology">Information Technology</label>
+                        <input class="form-check-input" type="checkbox">
+                    </div>
+                    <div class="form-check">
+                        <label for="Computer Architecture">Computer Architecture</label>
+                        <input class="form-check-input" type="checkbox">
+                    </div>
+                    <div class="form-check">
+                        <label for="Tele Communication">Tele Communication</label>
+                        <input class="form-check-input" type="checkbox">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="Password">
+                </div>
+                <div>
+                    <button onclick="myvalidation(event)" type="submit" class="btn btn-primary">Registered</button>
+                    <!-- <input  type="submit" onsubmit="myvalidation(event)" class="btn btn-primary" value="Registered"> -->
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+
+
+</body>
+
+</html>
