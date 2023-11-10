@@ -8,27 +8,49 @@
 <body>
 
     <script>
-        let x = prompt("Enter Your Marlk")
-        switch (x) {
-            case 1:
-                console.log("fail");
+        // let x = 70;
+        // switch (x) {
+        //     case 0:
+        //         console.log("fail");
+        //         break;
+        //     case 33:
+        //     console.log("fail");
+        //         break;
+        //     case 45:
+        //     console.log("Pass");
+        //         break;
+        //     case 60:
+        //     console.log("Average Marks");
+        //         break;
+        //     case 70:
+        //     console.log("Good Marks");
+        //         break;
+        //     case 80:
+        //     console.log("A+ Marks");
+        //         break;
+        //     case 90:
+        //     console.log("A++ Marks");
+        //         break;
+        //     case 100:
+        //     console.log("A++ Marks");
+        //         break;
+        //     default:
+        //         console.log("pass");
+        //         document.write("pass")
+        //         break;
+        // }
+
+        let age = 35;
+         
+        switch (true) {
+            case (age >= 15 && age <= 20):
+                document.write("Your Are Eligile")
                 break;
-            case 10:
-            console.log("fail");
+            case (age >= 21 && age <= 30):
+                document.write("Your Are Not Eligile")
                 break;
-            case 15:
-            console.log("fail");
-                break;
-            case 20:
-            console.log("fail");
-                break;
-            case 22:
-            console.log("fail");
-                break;
-        
             default:
-            console.log("pass");
-            document.write("pass")
+            document.write("Enter Valid Age")
                 break;
         }
     </script>
