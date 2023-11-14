@@ -340,6 +340,10 @@ footer h4 {
     padding-bottom: 25px;
 }
 
+.btn-call i {
+    color: #FFf;
+}
+
 .btn-call{
     position: fixed;
     cursor: pointer;
@@ -347,9 +351,12 @@ footer h4 {
     bottom: 20px;
     right: 80px;
     padding: 20px;
-    color: white;
     border-radius: 50%;
     background-color: red;
+}
+
+.Fixed-contact i {
+    color: #fff;
 }
 
 .Fixed-contact{
@@ -358,7 +365,6 @@ footer h4 {
     bottom: 20px;
     right: 10px;
     padding: 20px;
-    color: white;
     background-color: red;
     border-radius: 50%;
 }
