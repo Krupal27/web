@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    
+    <script>
+            // last ...(Three dots as call as rest operater)
+        function sum(name , ...arg) {
+            console.log(arguments);
+            let sum = 0;
+            document.write(`Name ${name} : `)
+
+            for(let i in arg){
+                sum += arg[i]
+            }
+                document.write(sum + "<br>");
+        }
+        sum("Krupal",20,30,40);
+        // sum(50,20,30,40);
+
+
+
+
+    </script>
+</body>
+</html>
