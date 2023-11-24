@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    
+    <script>
+
+        let data = {
+            student1 :{
+                name : "",
+                age : 21
+            },
+
+            student2 : {
+                name : "",
+                age : "25"
+            }
+        }
+        // console.log(data.student1 , data.student2);
+
+        // undefined & null
+
+        console.log(data.student1.name || "Raj");
+        // console.log(data.student1.age || 10);
+        console.log(data.student1.name ?? "raj");
+        console.log(data.student1.age ?? 10);
+        // console.log(data.student2.name ?? 10);
+        // console.log(data.student2.age ?? 10);
+
+    </script>
+</body>
+</html>
