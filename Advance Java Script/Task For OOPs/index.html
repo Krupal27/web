@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+class Hotel {
+    constructor(name , rooms , booked ){
+    this.name = name;
+    this.rooms = rooms;
+    this.booked = booked;
+    }
+    roommanagement(){
+        let booskrooms =  this.rooms - this.booked;
+        console.log(booskrooms);
+    }
+
+}
+let Krupal = new Hotel("The Grand Hotel", 100, 85);
+console.log(Krupal);
+Krupal.roommanagement(this.rooms, this.booked);
+
+let Neel = new Hotel("Taj HOtel", 75, 55);
+Neel.roommanagement(this.rooms, this.booked)
+console.log(Neel);
+
+let Ankit = new Hotel("The Grand Mulidar" , 80 , 55);
+Ankit.roommanagement (this.rooms , this.booked);
+console.log(Ankit);
+
+
+class Institute {
+  constructor(insname) {
+    this.insname = insname;
+  }
+  present() {
+    return 'I have a ' + this.insname;
+  }
+}
+
+class Student extends Institute {
+  constructor(insname, name) {
+    super(insname);
+    this.name = name;
+  }
+  show() {
+    return this.present() + ', it is a ' + this.name;
+  }
+}
+
+let mystudent = new Student("KRC School","Krupal");
+let a = mystudent.show();
+console.log (a);
+
+let mystudent2 = new Student("LD Colleage","Amit");
+let b = mystudent2.show();
+console.log (b);
+
+class Bankmanagement {
+    constructor(name  , amount){
+        this.name = name
+        this.amount = amount
+    }
+    showdetails(){
+        console.log(this.name, this.amount);
+    }
+    widthdrowl(money){
+        this.money=money
+
+       let total = this.amount - this.money;
+        console.log(total);
+    }
+}
+
+let customer = new Bankmanagement("Karan", parseInt("500000"));
+customer.showdetails();
+customer.widthdrowl(parseInt("3000"));
+
+let customer2 = new Bankmanagement("Kishan", parseInt("100000"));
+customer.showdetails();
+customer.widthdrowl(parseInt("5000"));
+
+
+
+
+    </script>
+    
+</body>
+</html>
