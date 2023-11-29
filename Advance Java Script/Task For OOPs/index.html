@@ -90,7 +90,39 @@
         customer.widthdrowl(parseInt("5000"));
 
 
+        class Animal{
+            run (){
+                console.log( this.name + " is running");
+            }
+            fil(givename){
+                this.name = givename;
+            }
+        }
 
+        class Animal2 extends Animal{
+            eat(){
+                console.log( this.name +" eating a Grass");
+            }
+        }
+
+        class Animal3 extends Animal{
+            sleep(){
+                console.log( this.name + " is just sleepd near tree");
+            }
+        }
+
+        let cat = new Animal();
+        cat.fil("Honey");
+        cat.run()
+        console.log(cat);
+
+        let dog = new Animal2()
+        dog.fil("Tom");
+        dog.eat();
+
+        let elephant = new Animal3();
+        elephant.fil("Sonu");
+        elephant.sleep();
 
     </script>
 
