@@ -6,30 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Date Difference Calculator</title>
     <style>
-        *{
-            margin: 0 ;
+        * {
+            margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        h1{
+
+        h1 {
             text-align: center;
             margin: 10px 0;
         }
-        .wrapper{
-            /* display: flex; */
-            /* text-align: center;
-            display: block;
-            margin: 0 auto; */
-        }
-        input{
+
+        input {
             padding: 10px 15px;
             font-weight: 600;
             display: block;
-            margin:  20px auto;
+            margin: 20px auto;
         }
 
 
-        button{
+        button {
             display: block;
             margin: 0 auto;
             padding: 8px 15px;
@@ -39,7 +35,8 @@
             color: white;
             background-color: rgba(0, 0, 255, 0.937);
         }
-        #result{
+
+        #result {
             text-align: center;
             margin: 40px 0;
 
@@ -54,14 +51,14 @@
     <div class="wrapper">
         <!-- <label for="startDate">Start Date:</label> -->
         <input type="date" id="startDate" placeholder="YYYY-MM-DD">
-    
+
         <!-- <label for="endDate">End Date:</label> -->
         <input type="date" id="endDate" placeholder="YYYY-MM-DD">
     </div>
 
-    <button id="calculateBtn">Click Now</button>
+        <button id="calculateBtn">Click Now</button>
 
-    <div id="result"></div>
+        <div id="result"></div>
 
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -73,11 +70,11 @@
                 const startDate = new Date(startDateStr);
                 const endDate = new Date(endDateStr);
                 const timeDiff = endDate - startDate;
-3
+                3
 
-                const oneDay = 24 * 60 * 60 * 1000;
+                const oneDay = 24 * 60 * 60 * 1000; // Hours , Minits , Secomds , Miniseconds
                 const oneWeek = 7 * oneDay;
-                const oneMonth = 30.44 * oneDay; 
+                const oneMonth = 30.44 * oneDay;
                 const oneYear = 365.25 * oneDay;
 
 
@@ -90,14 +87,14 @@
             }
 
             $("#calculateBtn").click(function () {
-                
+
                 const startDateInput = $("#startDate").val();
                 const endDateInput = $("#endDate").val();
 
-                
+
                 const dateDifference = getDateDifference(startDateInput, endDateInput);
 
-                
+
                 $("#result").html(`
                 Years: ${dateDifference.years}<br>
                 Months: ${dateDifference.months}<br>
