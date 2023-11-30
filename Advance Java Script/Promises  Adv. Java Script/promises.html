@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- Programmining execution  -->
+
+    <!-- Promise As an object , single time return result, 2 Peramiters Resolved and reject -->
+    <script>
+        let p = new Promise((resolved , reject)=>{
+            let a = 2 + 2;
+            if (a === 4) {
+                resolved("Done");
+            }
+            else{
+                reject("Failed");
+            }
+        })
+        console.log(p);
+        p.then((msg)=>{
+            console.log("this is " + msg);
+        }).catch((msg)=>{
+            console.log("this is " + msg);
+        })
+
+        // Second Methods 
+
+        // setTimeout(()=>{
+        //     p.then((msg)=>{
+        //         console.log("This is " + msg);
+        //     }).catch((msg)=>{
+        //         console.log( "This is " + msg);
+        //     })
+        // } , 3000)
+    </script>
+
+
+</body>
+</html>
