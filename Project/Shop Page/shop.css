@@ -81,8 +81,29 @@ body {
 
 .nav-link:hover {
     color: #05a79c;
-    border-bottom: solid 1.5px;
-    transition: 0.2s ease;
+    transition: 0.3s ease;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.nav-link::before {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #05a79c;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
 }
 
 #page-header{
