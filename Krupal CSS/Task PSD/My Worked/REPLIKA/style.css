@@ -113,9 +113,9 @@ select{
 .sec-one{
     padding: 20px 0;
     background-color: rgba(241, 230, 230, 0.39);
-    /* position: sticky;
-    top: 0; */
-    /* width: 100%; */
+    position: sticky;
+    top: 0; 
+    width: 100%;
 }
 .filter ul li{
     list-style: none;
