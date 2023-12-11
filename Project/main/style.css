@@ -71,7 +71,7 @@ ul li {
 
 .nav-link:hover {
     color: #05a79c;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 .nav-link {
@@ -93,7 +93,7 @@ ul li {
     transform: translateX(-50%);
     background-color: #05a79c;
     visibility: hidden;
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 #hero {
@@ -150,6 +150,7 @@ ul li {
 
 #features .card:hover {
     box-shadow: 10px 10px 54px rgb(72, 62, 221, 0.1);
+    transition: all 0.4s ease-in-out;
 }
 
 #features .card .btn {
