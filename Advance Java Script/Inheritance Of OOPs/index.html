@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        class Animal {
+            run(){
+                console.log( this.name + " is Running");
+            }
+            fil(givename){
+                this.name = givename
+            }
+        }
+
+        class Animal2 extends Animal{
+            data(){
+                console.log(this.name + " Data");
+            }
+        }
+
+        let cat = new Animal();
+        cat.fil("Honey")
+        cat.run();
+        console.log(cat);
+
+        let dog = new Animal2();
+        dog.fil("tom")
+        dog.data()
+        // console.log(dog);
+
+        class Institute {
+            insname (){
+                console.log(" Institute Name is " + this.name);
+            }
+            fil(givename){
+                this.name = givename
+            }
+        }
+
+        class Student extends Institute {
+            insstudent(){
+                console.log("My Institute Name is " + this.name);
+            }
+        }
+
+
+        let myins = new Institute();
+        myins.fil("LD Collage")
+        myins.insname();
+
+        let myins2 = new Student();
+        myins2.fil("Gujarat Univercity")
+        myins2.insstudent()
+
+
+    </script>
+
+
+</body>
+</html>
