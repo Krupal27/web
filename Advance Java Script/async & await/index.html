@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // async :
+
+        // function test() {
+        //     return "Test"
+        // }
+        // // test();
+        // // console.log(test());
+
+
+        // async function test() { //async function is provide promise
+        //     return "Test"
+        // }
+        // // test();
+        // console.log(test());
+
+        // test().then((result) => {
+        //     console.log(result);
+        // });
+
+        // let test1 = async () => {
+        //     return "hello"
+        // }
+
+        // test1().then((res) => {
+        //     console.log(res);
+        // });
+
+        // await :
+
+        let test2 = async () => {
+            console.log("Hello2");
+           await console.log("Hello3");
+            console.log("Hello4");
+        }
+
+        console.log("Hello1");
+        test2();
+        console.log("Hello5");
+
+    </script>
+
+</body>
+
+</html>
