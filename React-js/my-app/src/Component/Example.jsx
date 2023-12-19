@@ -10,7 +10,7 @@ function Example() {
                 <div className="row">
                     <div className="col-6">
                         <h3>
-                            <Link to="../Example/Classcomponent">Class Component</Link>
+                            <Link to="/Example/Classcomponent">Class Component</Link>
                         </h3>
                     </div>
                     <div className="col-6">
