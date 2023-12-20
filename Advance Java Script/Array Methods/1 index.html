@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <script>
-        let array = [11,12,13,14,15];
+        let array = [11, 12, 13, 14, 15];
         // console.log(a);
 
         a = array.toString(); // To Convert Arrray to String
@@ -29,9 +31,62 @@
         // f = array.slice(1,4); // Re-design
         // console.log(f , array);
 
-        g = array.splice(1,0,"Kruti","Krupal"); // De-structuring
-        console.log(g , array);
+        // g = array.splice(1, 0, "Kruti", "Krupal"); // De-structuring
+        // console.log(g, array);
+
+        // Map Method
+
+        // let data = [1, 2, 3, 4, 5, 6]; //map method always work in loop
+        // value , index , array statement
+
+        // function test(x) {
+        //     return x * 10;
+        // }
+
+        // let maindata = data.map((x) => {
+        //     return x * 10
+        //     // console.log(x, i, z);
+        //     console.log(x);
+        // })
+        // console.log(data);
+        // console.log(maindata);
+
+        // Filter Method
+
+        // let data = [10, 25, 9, 5, 4, 45, 60, 30];
+
+        // let maindata = data.filter((x) => {
+        //     return x <= 10
+        // })
+        // console.log(data);
+        // console.log(maindata);
+
+        // Reduce Method
+
+        // let data = [1, 2, 3, 4, 5, 6];
+
+        // let maindata = data.reduce((x1, x2) => {
+        //     return x1 + x2; // 1+1 =   2      + 3
+        //                     //(x1+x2)  (x2+x3)
+        // });
+        // console.log(data);
+        // console.log(maindata);
+
+        // Sort Method
+
+        // let data = [1, 2, 3, 4, 5, 6];
+
+        let data = [12,54,1,50,6,102,10]
+
+        let comper = (a, b) => {
+            return a - b; 
+        }
+
+        let i = data.sort(comper);
+        console.log(i);
+
     </script>
-    
+
 </body>
+
 </html>
