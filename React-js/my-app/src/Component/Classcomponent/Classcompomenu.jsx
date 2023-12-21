@@ -9,6 +9,8 @@ class Classcompomenu extends Component {
                     <li><Link to="Classcompointro">Classcompointro</Link></li>
                     <li><Link to="Classone">Classone</Link></li>
                     <li><Link to="Classcompojsx">Classcompojsx</Link></li>
+                    <li><Link to="Classcompoprops">Classcompoprops</Link></li>
+                    <li><Link to="Classmaincard">Classmaincard</Link></li>
                 </ul>
                 <Outlet/>
             </>
