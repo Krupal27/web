@@ -24,7 +24,6 @@ class Classcard extends Component {
                         <MDBBtn href='#'>{this.props.btn}</MDBBtn>
                     </MDBCardBody>
                 </MDBCard>
-
             </>
         );
     }
