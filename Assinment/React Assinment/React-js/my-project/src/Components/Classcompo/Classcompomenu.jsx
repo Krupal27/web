@@ -10,6 +10,7 @@ class Classcompomenu extends Component {
                 <ul>
                     <li><Link to="Classcompointro">Classcompointro</Link></li>
                     <li><Link to="Classcompoprops">Classcompoprops</Link></li>
+                    <li><Link to="Classcompostate">Classcompostate</Link></li>
                 </ul>
                 <Outlet />
             </>
