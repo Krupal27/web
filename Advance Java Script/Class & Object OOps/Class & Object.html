@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        class Form {
+            constructor(username, userpassword) {
+                this.username = username;
+                this.userpassword = userpassword;
+            }
+            sayhello(){
+                alert("Your Name" + " : " + this.name)
+            }
+            sayhii(){
+                alert("Your Password" + " : " + this.password)
+            }
+            fil(givname){
+                this.name = givname;
+            }
+            fil1(givpass){
+                this.password = givpass
+            }
+            static myfunction(){
+                alert("This Is Static")
+            }
+        }
+
+        // Form.myfunction()// Static must use only class , Not a prototype 
+        let krupal = new Form("Krupal Patel", "Krupal@09");
+        krupal.fil("Krupal");
+        krupal.sayhello();
+        // krupal.fil1("Krupal@09");
+        // krupal.sayhii();
+        console.log(krupal);
+
+        let kruti = new Form("Kruti" , "kruti@12");
+        // kruti.fil("Kruti")
+        // kruti.sayhello()
+        // kruti.fil1("kruti@12")
+        // kruti.sayhii()
+        console.log(kruti);
+
+    </script>
+
+</body>
+
+</html>
