@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    class Form{
+        constructor(username,userpassword){
+            this.username = username
+            this.userpassword = userpassword
+        }
+    }
+    let krupal = new Form("Krupal","KrupalPatel@123");
+    console.log(krupal);
+
+    class Data {
+        constructor(productname,productprice,productmodel,productdiscount){
+            this.productname = productname
+            this.productprice = productprice
+            this.productmodel = productmodel
+            this.productdiscount = productdiscount
+        }
+    }
+
+    let product = new Data("BMW",4000000,"ES6","05%");
+    console.log(product);
+    // console.log(product.productmodel); // Data Destructuring
+ </script>
+    
+</body>
+</html>
