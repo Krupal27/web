@@ -7,7 +7,7 @@ import Product from "./Component/Product";
 import { Suspense } from "react";
 import Example from "./Component/Example";
 // import Classcompointro from "./Component/Classcomponent/Classcompointro";
-const Classcomporoutes = React.lazy(()=> import("./Component/Classcomponent/Classcomporoutes"))
+const Classcomporoutes = React.lazy(() => import("./Component/Classcomponent/Classcomporoutes"))
 // import Classcompomenu from "./Component/Classcomponent/Classcompomenu";
 const About = React.lazy(() => import("./Component/About"))
 
@@ -33,11 +33,11 @@ const Mainrouter = createBrowserRouter([
     {
         path: "/example",
         element: <><Navbar /><Example /></>,
-        children:[
+        children: [
             {
                 path: "Classcomponent/*",
                 element: <>
-                <Suspense fallback={<h1>Loading... </h1>}><Classcomporoutes/></Suspense></>
+                    <Suspense fallback={<h1>Loading... </h1>}><Classcomporoutes /></Suspense></>
             }
         ]
     }
