@@ -5,8 +5,9 @@ import Classcompointro from "./Classcompointro";
 import Classone from "./01Classone";
 import Classcompojsx from "./02Classcompojsx";
 import Classcompoprops from "./03Classcompoprops";
-// import Classcard from "./05Classcard";
 import Classmaincard from "./06Classmaincard";
+import Classcompostate from "./07Classcompostate";
+import Conditionrendaring from "./08Coditionrendaring";
 
 class Classcomporoutes extends Component {
     render() {
@@ -18,8 +19,9 @@ class Classcomporoutes extends Component {
                         <Route path="Classone" element={<Classone />} />
                         <Route path="Classcompojsx" element={<Classcompojsx />} />
                         <Route path="Classcompoprops" element={<Classcompoprops />} />
-                        {/* <Route path="Classcard" element={<Classcard />} /> */}
                         <Route path="Classmaincard" element={<Classmaincard />} />
+                        <Route path="Classcompostate" element={<Classcompostate />} />
+                        <Route path="Conditionrendaring" element={<Conditionrendaring />} />
                     </Route>
                 </Routes>
                 {/* <Outlet /> */}
