@@ -11,11 +11,11 @@ class Classcompostate extends Component {
     }
 
     update = () => {
-        if(this.state.count >= 15){
+        if (this.state.count >= 15) {
             return 0
         }
         console.log("update");
-        
+
         this.setState({ count: this.state.count + 1 })
     }
     decrease = () => {
@@ -31,13 +31,11 @@ class Classcompostate extends Component {
         // let data = 0
         return (
             <>
-
                 <h1>Classcompo State</h1>
                 {/* <p>{data}</p> */}
                 <p>{this.state.count}</p>
                 <button className='mx-2' onClick={this.update}>Update State (+)</button>
                 <button onClick={this.decrease}>Decrease (-)</button>
-
             </>
         );
     }

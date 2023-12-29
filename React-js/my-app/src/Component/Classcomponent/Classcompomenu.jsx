@@ -13,6 +13,8 @@ class Classcompomenu extends Component {
                     <li><Link to="Classmaincard">Classmaincard</Link></li>
                     <li><Link to="Classcompostate">Classcompostate</Link></li>
                     <li><Link to="Conditionrendaring">Conditionrendaring</Link></li>
+                    <li><Link to="Uncontrolledcompo">Uncontrolledcompo</Link></li>
+                    <li><Link to="Controlledcompo">Controlledcompo</Link></li>
                 </ul>
                 <Outlet/>
             </>

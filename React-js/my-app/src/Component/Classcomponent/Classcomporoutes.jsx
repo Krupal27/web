@@ -8,6 +8,8 @@ import Classcompoprops from "./03Classcompoprops";
 import Classmaincard from "./06Classmaincard";
 import Classcompostate from "./07Classcompostate";
 import Conditionrendaring from "./08Coditionrendaring";
+import Uncontrolledcompo from "./09Uncontrolledcompo";
+import Controlledcompo from "./10Controlledcompo";
 
 class Classcomporoutes extends Component {
     render() {
@@ -22,6 +24,8 @@ class Classcomporoutes extends Component {
                         <Route path="Classmaincard" element={<Classmaincard />} />
                         <Route path="Classcompostate" element={<Classcompostate />} />
                         <Route path="Conditionrendaring" element={<Conditionrendaring />} />
+                        <Route path="Uncontrolledcompo" element={<Uncontrolledcompo />} />
+                        <Route path="Controlledcompo" element={<Controlledcompo />} />
                     </Route>
                 </Routes>
                 {/* <Outlet /> */}
