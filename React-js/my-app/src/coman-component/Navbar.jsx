@@ -19,6 +19,7 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link, Outlet } from "react-router-dom"
 
+
 export default function Navbar() {
   const [openBasic, setOpenBasic] = useState(false);
 
@@ -28,6 +29,7 @@ export default function Navbar() {
         <MDBContainer fluid>
           <MDBNavbarBrand href='#'>
             <div>Logo</div>
+            {/* <img src={logo} alt="" /> */}
           </MDBNavbarBrand>
 
           <MDBNavbarToggler
