@@ -194,7 +194,7 @@ ul li {
     width: 300px;
     padding: 20px 30px;
     background-color: #f1f1f1;
-    border: none;
+    border: solid 1px #004f6438;
 }
 
 #email{
@@ -202,12 +202,25 @@ ul li {
     width: 625px;
     padding: 20px 30px;
     background-color: #f1f1f1;
-    border: none;
+    border: solid 1px #004f6438;
+}
+
+#name:hover{
+    border: solid 1px red;
+}
+
+#contact:hover{
+    border: solid 1px red;
+}
+
+#email:hover{
+    border: solid 1px red;
 }
 
 textarea{
     height: 100px;
     width: 625px;
+    border: solid 1px #004f6438;
     padding: 10px 20px;
     background-color: #f1f1f1;
 }
@@ -227,7 +240,7 @@ button:hover{
     background-color: black;
 }
 
-input:hover{
+textarea:hover{
     border: solid 1px red;
 }
 
@@ -323,6 +336,10 @@ footer h4 {
     padding-bottom: 25px;
 }
 
+.btn-call i{
+    color: #fff;
+}
+
 .btn-call{
     font-size: auto;
     position: fixed;
@@ -331,9 +348,12 @@ footer h4 {
     bottom: 20px;
     right: 75px;
     padding: 20px;
-    color: white;
     border-radius: 50%;
     background-color: red;
+}
+
+.Fixed-contact i{
+    color: #fff;
 }
 
 .Fixed-contact{
@@ -342,7 +362,6 @@ footer h4 {
     bottom: 20px;
     right: 10px;
     padding: 20px;
-    color: white;
     background-color: red;
     border-radius: 50%;
 }
