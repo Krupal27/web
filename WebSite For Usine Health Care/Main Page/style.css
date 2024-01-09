@@ -283,6 +283,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
 }
 
 .swiper-slide img {
@@ -309,15 +310,20 @@ body {
 
 .swiper-slide .slider-btn {
     font-size: 11px;
-    font-weight: 400;
     border: none;
     cursor: pointer;
-    padding: 8px;
-    background-color: #004f64;
+    /* padding: 1px 15px; */
+    /* background-color: #004f64; */
     color: #fff;
     border-radius: 7px;
     transition: all 0.2s initial;
     font-weight: 600;
+}
+
+.swiper-slide .slider-btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #004f64;
 }
 
 .swiper-slide .slider-btn:hover {
@@ -328,6 +334,11 @@ body {
 .sec-four {
     padding: 50px 0;
     position: relative;
+}
+
+.second-text a{
+    text-decoration: none;
+    /* color: black; */
 }
 
 .sec-four .main-tital:after {
@@ -345,6 +356,7 @@ body {
 .box {
     width: 30%;
     padding: 20px;
+    /* color: #000; */
 }
 
 .sec-four .second-text .box:hover {
@@ -371,15 +383,19 @@ body {
 
 .sec-four .second-text h3 {
     padding: 10px 0;
+    color: black;
     font-size: 25px;
     text-align: center;
+    /* font-weight: 500; */
 }
 
 .sec-four .second-text p {
     opacity: 0.7;
+    color: black;
     font-style: italic;
     text-align: center;
     font-size: 15px;
+    /* font-weight: 600; */
 }
 
 .sec-five {
@@ -492,6 +508,10 @@ footer h4 {
     padding-bottom: 25px;
 }
 
+.btn-call i{
+    color: #fff;
+}
+
 .btn-call{
     position: fixed;
     cursor: pointer;
@@ -499,9 +519,12 @@ footer h4 {
     bottom: 20px;
     right: 80px;
     padding: 20px;
-    color: white;
     border-radius: 50%;
     background-color: red;
+}
+
+.Fixed-contact i{
+    color: #fff;
 }
 
 .Fixed-contact{
@@ -510,7 +533,6 @@ footer h4 {
     bottom: 20px;
     right: 10px;
     padding: 20px;
-    color: white;
     background-color: red;
     border-radius: 50%;
 }
