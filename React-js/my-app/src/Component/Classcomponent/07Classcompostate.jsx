@@ -27,6 +27,13 @@ class Classcompostate extends Component {
         this.setState({ count: this.state.count - 1 })
 
     }
+
+    reset = () => {
+
+        this.setState({ count: 0 })
+        console.log("reset");
+    }
+
     render() {
         // let data = 0
         return (
@@ -35,7 +42,8 @@ class Classcompostate extends Component {
                 {/* <p>{data}</p> */}
                 <p>{this.state.count}</p>
                 <button className='mx-2' onClick={this.update}>Update State (+)</button>
-                <button onClick={this.decrease}>Decrease (-)</button>
+                <button className='mx-2' onClick={this.decrease}>Decrease (-)</button>
+                <button onClick={this.reset}>Reset</button>
             </>
         );
     }
