@@ -15,9 +15,8 @@ import {
   MDBDropdownItem,
   MDBCollapse,
 } from 'mdb-react-ui-kit';
-import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link, Outlet } from "react-router-dom"
+import Logo from "../assets/logo.png"
 
 
 export default function Navbar() {
@@ -28,8 +27,8 @@ export default function Navbar() {
       <MDBNavbar expand='lg' light bgColor='light'>
         <MDBContainer fluid>
           <MDBNavbarBrand href='#'>
-            <div>Logo</div>
-            {/* <img src={logo} alt="" /> */}
+            {/* <div>Logo</div> */}
+            <img src={Logo} alt="" />
           </MDBNavbarBrand>
 
           <MDBNavbarToggler

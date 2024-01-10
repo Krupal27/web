@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom/client';
 // import App from './App';
 // import Test from './Test';
 // import reportWebVitals from './reportWebVitals';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import Mainrouter from './Mainrouter';
 import { RouterProvider } from 'react-router-dom';
 
