@@ -41,9 +41,10 @@ class Controlledcompo extends Component {
                             onChange={(e) => this.setState({ details: e.target.value })}></textarea>
                     </div>
                     <div className='my-3'>
-                        <label htmlFor="">Citys : </label>
+                        {/* <label htmlFor="">Citys : </label> */}
                         <select name="Citys" id="" value={this.state.select}
                         onChange={(e)=> this.setState({select : e.target.value})}>
+                            <option value="">Select City :</option>
                             <option value="Ahmedabad">Ahmedabad</option>
                             <option value="Surat">Surat</option>
                             <option value="Rajkot">Rajkot</option>
