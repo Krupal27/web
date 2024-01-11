@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        ul {
+            margin: 40px 20px;
+        }
+
+        ul li {
+
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .col-25 {
+            width: 25%;
+        }
+
+        .col-75 {
+            width: 75%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-25">
+            <ul>
+                <li><a target="your-file" href="./01index.html">Home</a></li>
+                <li><a target="your-file" href="./02index.html">About</a></li>
+                <li><a target="your-file" href="./03index.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="col-75">
+            <iframe name="your-file" src="./01index.html" frameborder="0"></iframe>
+        </div>
+    </div>
+
+</body>
+
+</html>
