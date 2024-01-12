@@ -216,20 +216,19 @@ h6 {
     margin: 0 auto;
 }
 
-.col-30 button{
-    letter-spacing: 0.4px;
+.col-30 a {
+    text-decoration: none;
     cursor: pointer;
-    border: none;
+    text-align: center;
+    color: #273238;
     background-color: transparent;
     display: block;
-    margin: 0 auto;
-    font-weight: 550;
+    font-size: 13px;
+    font-weight: 500;
 }
 
-.col-30 button:hover{
-    font-weight: 600;
+.col-30 a:hover{
     color: blue;
-    border-bottom: solid 2px;
 }
 
 footer {
@@ -328,6 +327,10 @@ footer h4{
     padding-bottom: 25px;
 }
 
+.btn-call i{
+    color: #fff;
+}
+
 .btn-call{
     font-size: auto;
     position: fixed;
@@ -336,9 +339,12 @@ footer h4{
     bottom: 20px;
     right: 75px;
     padding: 20px;
-    color: white;
     border-radius: 50%;
     background-color: red;
+}
+
+.Fixed-contact i{
+    color: #fff;
 }
 
 .Fixed-contact{
@@ -347,7 +353,6 @@ footer h4{
     bottom: 20px;
     right: 10px;
     padding: 20px;
-    color: white;
     background-color: red;
     border-radius: 50%;
 }
