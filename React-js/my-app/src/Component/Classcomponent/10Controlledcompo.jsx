@@ -31,13 +31,13 @@ class Controlledcompo extends Component {
                 <h3>Controlledcompo</h3>
                 <form onSubmit={this.submit}>
                     <div>
-                        <input type="text" name="" id="" value={this.state.name}
+                        <input type="text" placeholder='Enter Your Name' name="" id="" value={this.state.name}
                             onChange={(e) => this.setState({ name: e.target.value })}
                         // onChange={this.change}
                         />
                     </div>
                     <div className='my-3'>
-                        <textarea name="" id="" cols="30" rows="10" value={this.state.details}
+                        <textarea placeholder='Enter Your Details' name="" id="" cols="30" rows="10" value={this.state.details}
                             onChange={(e) => this.setState({ details: e.target.value })}></textarea>
                     </div>
                     <div className='my-3'>
