@@ -11,6 +11,8 @@ import Conditionrendaring from "./08Coditionrendaring";
 import Uncontrolledcompo from "./09Uncontrolledcompo";
 import Controlledcompo from "./10Controlledcompo";
 import Listandkeys from "./11Listandkeys";
+import Classcompositionandinheritance from "./12Classcompositionandinheritance";
+import Maincounter from "./HOC/Maincounter";
 
 class Classcomporoutes extends Component {
     render() {
@@ -28,6 +30,8 @@ class Classcomporoutes extends Component {
                         <Route path="Uncontrolledcompo" element={<Uncontrolledcompo />} />
                         <Route path="Controlledcompo" element={<Controlledcompo />} />
                         <Route path="Listandkeys" element={<Listandkeys />} />
+                        <Route path="Classcompositionandinheritance" element={<Classcompositionandinheritance />} />
+                        <Route path="Maincounter" element={<Maincounter />} />
                     </Route>
                 </Routes>
                 {/* <Outlet /> */}
