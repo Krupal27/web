@@ -42,7 +42,7 @@ const Mainrouter = createBrowserRouter([
             },
             {
                 path: "Functioncomponent/*",
-                element:<><Functioncomporoutes/></>
+                element: <><Functioncomporoutes /></>
             }
         ]
     }
