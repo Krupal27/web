@@ -42,7 +42,7 @@ const Mainrouter = createBrowserRouter([
             },
             {
                 path: "Functioncomponent/*",
-                element: <><Functioncomporoutes /></>
+                element: <><Suspense fallback={<h1>Loading... </h1>}><Functioncomporoutes /></Suspense></>
             }
         ]
     }
