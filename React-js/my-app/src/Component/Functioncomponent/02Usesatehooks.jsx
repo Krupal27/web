@@ -25,9 +25,9 @@ const Usesatehooks = () => {
 
             <h3>Usesatehooks</h3>
             <p>{count}</p>
-            <button onClick={addvalue}>Add Value</button>
-            <button className='mx-3' onClick={removevalue}>Remove Value</button>
-            <button onClick={reset}>Reset</button>
+            <button className='bg-black rounded-3 text-white py-1 px-3' onClick={addvalue}>Add Value</button>
+            <button className='mx-3 bg-black rounded-3 text-white py-1 px-3 ' onClick={removevalue}>Remove Value</button>
+            <button className='bg-black rounded-3 text-white py-1 px-3' onClick={reset}>Reset</button>
 
         </>
     );
