@@ -19,7 +19,7 @@ function Example() {
                         </h3>
                     </div>
                 </div>
-                <div className="row my-3">
+                <div className="row mx-auto">
                     <div className="col-12">
                         <Outlet />
                     </div>
