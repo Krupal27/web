@@ -1,16 +1,14 @@
 import React from "react";
+import { Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Navbar from "./coman-component/Navbar";
 import Home from "./Component/Home";
-// import About from "./Component/About";
 import Product from "./Component/Product";
-import { Suspense } from "react";
 import Example from "./Component/Example";
-import Functioncomporoutes from "./Component/Functioncomponent/Functioncomporoutes";
-// import Classcompointro from "./Component/Classcomponent/Classcompointro";
-const Classcomporoutes = React.lazy(() => import("./Component/Classcomponent/Classcomporoutes"))
-// import Classcompomenu from "./Component/Classcomponent/Classcompomenu";
-const About = React.lazy(() => import("./Component/About"))
+const About = React.lazy(() => import("./Component/About"));
+// import Functioncomporoutes from "./Component/Functioncomponent/Functioncomporoutes";
+const Classcomporoutes = React.lazy(() => import("./Component/Classcomponent/Classcomporoutes"));
+const Functioncomporoutes = React.lazy(() => import("./Component/Functioncomponent/Functioncomporoutes"));
 
 const Mainrouter = createBrowserRouter([
     {
