@@ -39,15 +39,28 @@
 
         // await :
 
-        let test2 = async () => {
-            console.log("Hello2");
-           await console.log("Hello3");
-            console.log("Hello4");
+        // let test2 = async () => {
+        //     console.log("Hello2");
+        //    await console.log("Hello3");
+        //     console.log("Hello4");
+        // }
+
+        // console.log("Hello1");
+        // test2();
+        // console.log("Hello5");
+
+
+        let URL = "https://jsonplaceholder.typicode.com/posts";
+
+        const getResult = async () => {
+            let respons = await fetch(URL);
+            console.log(respons);
+            const data = await respons.json();
+            console.log(data);
+            console.log(data[0]);
         }
 
-        console.log("Hello1");
-        test2();
-        console.log("Hello5");
+        getResult()
 
     </script>
 
