@@ -9,6 +9,7 @@ const Functioncompomenu = () => {
                 <li><Link to="Usesatehooks">Usesatehooks</Link></li>
                 <li><Link to="Useeffecthooks">Useeffecthooks</Link></li>
                 <li><Link to="Usememohook">Usememohook</Link></li>
+                <li><Link to="Usecallbackhook">Usecallbackhook</Link></li>
             </ul>
             <Outlet/>
         </>
