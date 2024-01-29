@@ -7,6 +7,7 @@ import Usesatehooks from './02Usesatehooks';
 import Useeffecthooks from './03Useeffecthooks';
 import Usememohook from './04Usememohooks';
 import Usecallbackhook from './05Usecallbackhooks';
+import Usenavigate from './06Usenavigate';
 
 const Functioncomporoutes = () => {
     return (
@@ -18,6 +19,7 @@ const Functioncomporoutes = () => {
                     <Route path='Useeffecthooks' element={<Useeffecthooks />} />
                     <Route path='Usememohook' element={<Usememohook />} />
                     <Route path='Usecallbackhook' element={<Usecallbackhook />} />
+                    <Route path='Usenavigate' element={<Usenavigate />} />
                 </Route>
             </Routes>
         </>
