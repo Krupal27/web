@@ -5,6 +5,7 @@ import Functioncompomenu from './Functioncompomenu';
 import Functioncompointro from './01Functioncompointro';
 import Usesatehooks from './02Usesatehooks';
 import Useeffecthooks from './03Useeffecthooks';
+import Usememohook from './04Usememohooks';
 
 const Functioncomporoutes = () => {
     return (
@@ -14,6 +15,7 @@ const Functioncomporoutes = () => {
                     <Route path='Functioncompointro' element={<Functioncompointro />} />
                     <Route path='Usesatehooks' element={<Usesatehooks />} />
                     <Route path='Useeffecthooks' element={<Useeffecthooks />} />
+                    <Route path='Usememohook' element={<Usememohook />} />
                 </Route>
             </Routes>
         </>
