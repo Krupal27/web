@@ -10,6 +10,7 @@ import Usecallbackhook from './05Usecallbackhooks';
 import Usenavigate from './06Usenavigate';
 import Api from './07Api';
 import Usecontaext from './08Usecontext';
+import Usereducer from './09Usereducer';
 
 const Functioncomporoutes = () => {
     return (
@@ -24,6 +25,7 @@ const Functioncomporoutes = () => {
                     <Route path='Usenavigate' element={<Usenavigate />} />
                     <Route path='Api' element={<Api />} />
                     <Route path='Usecontaext' element={<Usecontaext />} />
+                    <Route path='Usereducer' element={<Usereducer />} />
                 </Route>
             </Routes>
         </>
