@@ -2,14 +2,15 @@ import React from 'react';
 import CompoA from './CompoA';
 
 const Usecontaext = () => {
-    return ( 
+    let test = "123"
+    return (
         <>
-        
-        <h3>Usecontaext</h3>
-        <CompoA/>
+
+            <h3>Usecontaext</h3>
+            <CompoA test={test} />
 
         </>
-     );
+    );
 }
- 
+
 export default Usecontaext;

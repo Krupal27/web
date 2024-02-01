@@ -7,6 +7,7 @@ const CompoA = () => {
 
             {/* <h1>data</h1> */}
             <CompoB />
+            {/* <p>{props.test}</p> */}
         </>
     );
 }
