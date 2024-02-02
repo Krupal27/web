@@ -26,7 +26,7 @@ const Api = () => {
                 </tr>
                 {
                     userdata && userdata.map((item) =>
-                        <tr key={item}>
+                        <tr> 
                             <td>{item.userId}</td>
                             <td>{item.id}</td>
                             <td>{item.title}</td>
