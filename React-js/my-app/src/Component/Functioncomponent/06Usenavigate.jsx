@@ -3,19 +3,20 @@ import { useNavigate } from 'react-router-dom';
 
 const Usenavigate = () => {
 
-    const navigate = useNavigate();
+    let navigate = useNavigate()
 
-    let Home = () =>{
+    let home = () => {
         navigate("/home")
     }
-    return ( 
+
+    return (
         <>
-        
-        <h3>Usenavigate</h3>
-        <button onClick={Home}>Navigate</button>
-        
+
+            <h3>Usenavigate</h3>
+            <button onClick={home}>Navigate</button>
+
         </>
-     );
+    );
 }
- 
+
 export default Usenavigate;
