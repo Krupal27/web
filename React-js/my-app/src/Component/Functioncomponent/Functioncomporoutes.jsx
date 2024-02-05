@@ -11,6 +11,7 @@ import Usenavigate from './06Usenavigate';
 import Api from './07Api';
 import Usecontaext from './08Usecontext';
 import Usereducer from './09Usereducer';
+import Apipost from './10Apipost';
 
 const Functioncomporoutes = () => {
     return (
@@ -26,6 +27,7 @@ const Functioncomporoutes = () => {
                     <Route path='Api' element={<Api />} />
                     <Route path='Usecontaext' element={<Usecontaext />} />
                     <Route path='Usereducer' element={<Usereducer />} />
+                    <Route path='Apipost' element={<Apipost />} />
                 </Route>
             </Routes>
         </>
