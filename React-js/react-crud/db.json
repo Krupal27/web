@@ -5,6 +5,18 @@
             "name": "Krupal",
             "age": 21,
             "location": "Jamnagar"
+        },
+        {
+            "id": 2,
+            "name": "Amit",
+            "age": 23,
+            "location": "Rajkot"
+        },
+        {
+            "id": 3,
+            "name": "Vishal",
+            "age": 24,
+            "location": "Ahemdabad"
         }
     ]
 }
