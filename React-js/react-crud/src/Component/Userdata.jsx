@@ -36,7 +36,6 @@ const Userdata = () => {
                         <th scope='col'>name</th>
                         <th scope='col'>age</th>
                         <th scope='col'>location</th>
-                        <th scope='col'>action</th>
                     </tr>
                     {
                         userdata && userdata.map((val) =>
@@ -45,7 +44,6 @@ const Userdata = () => {
                                 <td>{val.name}</td>
                                 <td>{val.age}</td>
                                 <td>{val.location}</td>
-                                <td>{val.action}</td>
                             </tr>
                         )
                     }
