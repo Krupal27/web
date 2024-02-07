@@ -23,7 +23,7 @@ export default function App() {
     return (
         <MDBNavbar expand='lg' light bgColor='light'>
             <MDBContainer fluid>
-                <MDBNavbarBrand href='#'>Brand</MDBNavbarBrand>
+                <MDBNavbarBrand href='#'>Logo</MDBNavbarBrand>
 
                 <MDBNavbarToggler
                     aria-controls='navbarSupportedContent'
@@ -39,22 +39,22 @@ export default function App() {
                 <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
                     <MDBNavbarItem>
                         <MDBNavbarLink active aria-current='page' href='#'>
-                            <Link to="Userdata">Userdata</Link>
+                            <Link to="/userdata">Userdata</Link>
                         </MDBNavbarLink>
                     </MDBNavbarItem>
                     <MDBNavbarItem>
                         <MDBNavbarLink active aria-current='page' href='#'>
-                        <Link to="Useradd">Useradd</Link>
+                        <Link to="/useradd">Useradd</Link>
                         </MDBNavbarLink>
                     </MDBNavbarItem>
                     <MDBNavbarItem>
                         <MDBNavbarLink active aria-current='page' href='#'>
-                        <Link to="Useredit">Useredit</Link>
+                        <Link to="/useredit">Useredit</Link>
                         </MDBNavbarLink>
                     </MDBNavbarItem>
                     <MDBNavbarItem>
                         <MDBNavbarLink active aria-current='page' href='#'>
-                            <Link to="Userdelet">Userdelet</Link>
+                            <Link to="/userdelet">Userdelet</Link>
                         </MDBNavbarLink>
                     </MDBNavbarItem>
                 </MDBNavbarNav>
