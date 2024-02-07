@@ -17,7 +17,6 @@ import {
 } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 
-
 export default function App() {
     const [openBasic, setOpenBasic] = useState(false);
 
@@ -40,24 +39,25 @@ export default function App() {
                 <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
                     <MDBNavbarItem>
                         <MDBNavbarLink active aria-current='page' href='#'>
-                            <Link to="/Userdatas">Userdata</Link>
+                            <Link to="Userdata">Userdata</Link>
                         </MDBNavbarLink>
+                    </MDBNavbarItem>
+                    <MDBNavbarItem>
                         <MDBNavbarLink active aria-current='page' href='#'>
-                            <Link to="/Useradd">Useradd</Link>
+                        <Link to="Useradd">Useradd</Link>
                         </MDBNavbarLink>
+                    </MDBNavbarItem>
+                    <MDBNavbarItem>
                         <MDBNavbarLink active aria-current='page' href='#'>
-                            <Link to="/Useredit">Useredit</Link>
+                        <Link to="Useredit">Useredit</Link>
                         </MDBNavbarLink>
+                    </MDBNavbarItem>
+                    <MDBNavbarItem>
                         <MDBNavbarLink active aria-current='page' href='#'>
-                            <Link to="/Userdelet">Userdelet</Link>
+                            <Link to="Userdelet">Userdelet</Link>
                         </MDBNavbarLink>
                     </MDBNavbarItem>
                 </MDBNavbarNav>
-
-                <form className='d-flex input-group w-auto'>
-                    <input type='search' className='form-control' placeholder='Type query' aria-label='Search' />
-                    <MDBBtn color='primary'>Search</MDBBtn>
-                </form>
             </MDBCollapse>
         </MDBNavbar>
     );
