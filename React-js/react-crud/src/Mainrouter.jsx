@@ -7,26 +7,26 @@ import Useredit from "./Component/Useredit";
 import Userdelet from "./Component/Userdelet"
 
 const Mainrouter = createBrowserRouter([
-    // {
-    //     path: "/",
-    //     element: <><Navbar /></>
-    // },
     {
-        path: "/userdata",
+        path: "/",
+        element: <><Navbar /></>
+    },
+    {
+        path: "userdata",
         element: <><Navbar /><Userdata /></>
     },
     {
-        path: "/useradd",
+        path: "useradd",
         element: <><Navbar /><Useradd /></>
     },
     {
-        path: "/useredit",
+        path: "useredit",
         element: <><Navbar /><Useredit /></>
     },
     {
-        path: "/userdelet",
+        path: "userdelet",
         element: <><Navbar /><Userdelet /></>
     }
 ])
 
-export default Mainrouter
+export default Mainrouter;
