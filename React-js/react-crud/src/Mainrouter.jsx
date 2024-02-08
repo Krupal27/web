@@ -12,19 +12,19 @@ const Mainrouter = createBrowserRouter([
         element: <><Navbar /></>
     },
     {
-        path: "userdata",
+        path: "/userdata",
         element: <><Navbar /><Userdata /></>
     },
     {
-        path: "useradd",
+        path: "/useradd",
         element: <><Navbar /><Useradd /></>
     },
     {
-        path: "useredit",
+        path: "/useredit/:userid",
         element: <><Navbar /><Useredit /></>
     },
     {
-        path: "userdelet",
+        path: "/userdelet",
         element: <><Navbar /><Userdelet /></>
     }
 ])
