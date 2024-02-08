@@ -3,11 +3,12 @@ import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 import { useNavigate } from 'react-router-dom';
 
 const Userdata = () => {
-
-    const [userdata, setUserdata] = useState("")
+    
+    const [userdata, setUserdata] = useState([])
+    let navigate = useNavigate();
 
     useEffect(() => {
-        fetch("http://localhost:7501/userdata").then((resp) => {
+        fetch("http://localhost:7454/userdata").then((resp) => {
             resp.json().then((result) => {
                 // console.log(result);
                 setUserdata(result)
@@ -16,7 +17,6 @@ const Userdata = () => {
     }, []);
     console.log(userdata);
 
-    let navigate = useNavigate()
 
     let useraddnav = () => {
         navigate("/useradd")
@@ -27,7 +27,7 @@ const Userdata = () => {
 
             <h3>Userdata</h3>
 
-            <button className='mx-3 my-4 bg-black text-white rounded-3' onClick={useraddnav}>Useradd</button>
+            <button className='mx-3 my-4 bg-black text-white rounded-3' onClick={useraddnav}>adduser</button>
 
             <MDBTable>
                 <MDBTableHead>
@@ -36,6 +36,7 @@ const Userdata = () => {
                         <th scope='col'>name</th>
                         <th scope='col'>age</th>
                         <th scope='col'>location</th>
+                        <th scope='col'>action</th>
                     </tr>
                     {
                         userdata && userdata.map((val) =>
@@ -44,6 +45,11 @@ const Userdata = () => {
                                 <td>{val.name}</td>
                                 <td>{val.age}</td>
                                 <td>{val.location}</td>
+                                <td>
+                                    <tr><button className='bg-black text-white rounded-2 px-2 me-1'>Edit</button>
+                                        <button className='bg-black text-white rounded-2 px-2'>Delete</button>
+                                    </tr>
+                                </td>
                             </tr>
                         )
                     }
