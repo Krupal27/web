@@ -1,22 +1,28 @@
 {
-    "userdata": [
-        {
-            "id": 1,
-            "name": "Krupal",
-            "age": 21,
-            "location": "Jamnagar"
-        },
-        {
-            "id": 2,
-            "name": "Amit",
-            "age": 23,
-            "location": "Rajkot"
-        },
-        {
-            "id": 3,
-            "name": "Vishal",
-            "age": 24,
-            "location": "Ahemdabad"
-        }
-    ]
+  "userdata": [
+    {
+      "id": 1,
+      "name": "Krupal",
+      "age": 21,
+      "location": "Jamnagar"
+    },
+    {
+      "id": 2,
+      "name": "Raj",
+      "age": 23,
+      "location": "Rajkot"
+    },
+    {
+      "id": 3,
+      "name": "Badal",
+      "age": 22,
+      "location": "Ahemdabad"
+    },
+    {
+      "id": "eb77",
+      "name": "Kishan",
+      "age": "26",
+      "location": "Surat"
+    }
+  ]
 }
