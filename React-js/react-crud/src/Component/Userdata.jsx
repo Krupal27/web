@@ -3,12 +3,12 @@ import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 import { useNavigate } from 'react-router-dom';
 
 const Userdata = () => {
-    
+
     const [userdata, setUserdata] = useState([])
     let navigate = useNavigate();
 
     useEffect(() => {
-        fetch("http://localhost:7454/userdata").then((resp) => {
+        fetch("http://localhost:4567/userdata").then((resp) => {
             resp.json().then((result) => {
                 // console.log(result);
                 setUserdata(result)
@@ -20,6 +20,11 @@ const Userdata = () => {
 
     let useraddnav = () => {
         navigate("/useradd")
+    }
+
+    let Edit = (id) => {
+        navigate("/Useredit/" + id)
+        console.log(id);
     }
 
     return (
@@ -34,8 +39,8 @@ const Userdata = () => {
                     <tr>
                         <th scope='col'>id</th>
                         <th scope='col'>name</th>
-                        <th scope='col'>age</th>
-                        <th scope='col'>location</th>
+                        <th scope='col'>email</th>
+                        <th scope='col'>password</th>
                         <th scope='col'>action</th>
                     </tr>
                     {
@@ -43,10 +48,11 @@ const Userdata = () => {
                             <tr>
                                 <td>{val.id}</td>
                                 <td>{val.name}</td>
-                                <td>{val.age}</td>
-                                <td>{val.location}</td>
+                                <td>{val.email}</td>
+                                <td>{val.password}</td>
                                 <td>
-                                    <tr><button className='bg-black text-white rounded-2 px-2 me-1'>Edit</button>
+                                    <tr><button className='bg-black text-white rounded-2 px-2 me-1' onClick={() => {Edit(val.id)}}>Edit</button>
+                                        <button className='bg-black text-white rounded-2 px-2 me-1'>Details</button>
                                         <button className='bg-black text-white rounded-2 px-2'>Delete</button>
                                     </tr>
                                 </td>
