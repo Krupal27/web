@@ -5,6 +5,7 @@ import Userdata from "./Component/Userdata";
 import Useradd from "./Component/Useradd";
 import Useredit from "./Component/Useredit";
 import Userdelet from "./Component/Userdelet"
+import Userdetails from './Component/Userdetails';
 
 const Mainrouter = createBrowserRouter([
     {
@@ -24,7 +25,11 @@ const Mainrouter = createBrowserRouter([
         element: <><Navbar /><Useredit /></>
     },
     {
-        path: "/userdelet",
+        path:"/userdetails/:userid",
+        element:<><Navbar/><Userdetails/></>
+    },
+    {
+        path: "/userdelet/:userid",
         element: <><Navbar /><Userdelet /></>
     }
 ])
