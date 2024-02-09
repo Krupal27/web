@@ -12,7 +12,7 @@ const Apipost = () => {
         // console.log(name , email , password);
         let data = { id, name, email, password }
         console.log(data);
-        fetch("http://localhost:4201/Hoteldata", {
+        fetch("http://localhost:4250/Hoteldata", {
             method: "POST",
             headers: {
                 "Content-type": "application/json"
@@ -27,13 +27,13 @@ const Apipost = () => {
         })
     }
 
-    useEffect(() => {
-        fetch("http://localhost:4201/Hoteldata").then((resp) => {
-            resp.json().then((result) => {
-                setUserdata(result);
-            })
-        })
-    })
+    // useEffect(() => {
+    //     fetch("http://localhost:4201/Hoteldata").then((resp) => {
+    //         resp.json().then((result) => {
+    //             setUserdata(result);
+    //         })
+    //     })
+    // })
 
     return (
         <>
@@ -55,7 +55,7 @@ const Apipost = () => {
                     <td>Emai</td>
                     <td>Possword</td>
                 </tr>
-                {
+                {/* {
                     userdata && userdata.map((item) =>
                         <tr>
                             <td>{item.name}</td>
@@ -63,7 +63,7 @@ const Apipost = () => {
                             <td>{item.password}</td>
                         </tr>
                     )
-                }
+                } */}
             </table>
         </>
     );
