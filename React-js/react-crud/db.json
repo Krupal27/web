@@ -1,28 +1,22 @@
 {
   "userdata": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Krupal",
-      "age": 21,
-      "location": "Jamnagar"
+      "email": "krupal123@gmail.com",
+      "password": "123456"
     },
     {
-      "id": 2,
-      "name": "Raj",
-      "age": 23,
-      "location": "Rajkot"
-    },
-    {
-      "id": 3,
-      "name": "Badal",
-      "age": 22,
-      "location": "Ahemdabad"
-    },
-    {
-      "id": "eb77",
+      "id": "1807",
       "name": "Kishan",
-      "age": "26",
-      "location": "Surat"
+      "email": "krupalbhensdadiya266@gmail.com",
+      "password": "789456"
+    },
+    {
+      "id": "48c4",
+      "name": "Raj",
+      "email": "raj0987@gmail.com",
+      "password": "1234"
     }
   ]
 }
