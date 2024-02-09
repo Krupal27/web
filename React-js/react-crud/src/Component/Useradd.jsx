@@ -18,7 +18,6 @@ const Useredit = () => {
 
     let savedata = (e) => {
         e.preventDefault()
-        
         // console.log("submit");
         let data = { name, email, password }
         fetch("http://localhost:4567/userdata", {
@@ -45,7 +44,7 @@ const Useredit = () => {
                 <MDBInput value={name} onChange={(e) => setName(e.target.value)} wrapperClass='mb-4' label='name' id='form2' type='text' />
                 <MDBInput value={email} onChange={(e) => setEmail(e.target.value)} wrapperClass='mb-4' label='email' id='form3' type='email' />
                 <MDBInput value={password} onChange={(e) => setPassword(e.target.value)} wrapperClass='mb-4' label='password' id='form4' type='password' />
-                <input type="submit" value="useradd" />
+                <input type="submit" value="useredit" />
                 {/* <button className='w-25 text-white bg-black rounded-3' onClick={savedata}>Submit</button> */}
                 </form>
             </MDBContainer>
