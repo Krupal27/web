@@ -1,22 +1,16 @@
 {
   "userdata": [
     {
-      "id": "1",
+      "id": "689d",
       "name": "Krupal",
-      "email": "krupal123@gmail.com",
-      "password": "123456"
-    },
-    {
-      "id": "1807",
-      "name": "Kishan",
       "email": "krupalbhensdadiya266@gmail.com",
-      "password": "789456"
+      "password": "1230120"
     },
     {
-      "id": "48c4",
+      "id": "cce7",
       "name": "Raj",
-      "email": "raj0987@gmail.com",
-      "password": "1234"
+      "email": "raj123@gmail.com",
+      "password": "123045"
     }
   ]
 }

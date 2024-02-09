@@ -14,8 +14,22 @@ const Userdata = () => {
                 setUserdata(result)
             })
         })
-    }, []);
+    }, [userdata]);
     console.log(userdata);
+
+    // useEffect(() => {
+    //     fetchUserdata()
+    // },[])
+
+    // const fetchUserdata = () => {
+    //     fetch("http://localhost:4567/userdata").then((resp) => {
+    //         resp.json().then((result) => {
+    //             console.log(result);
+    //         }).catch((er) => {
+    //             console.log(er);
+    //         })
+    //     })
+    // }
 
 
     let useraddnav = () => {
@@ -34,14 +48,12 @@ const Userdata = () => {
 
     let Delete = (id) => {
         console.log(id);
-
-
         if (window.confirm("do you want to delete")) {
             fetch("http://localhost:4567/userdata/" + id, {
                 method: "DELETE"
             }).then((resp) => {
-                alert("Data was removed successfully")
-                window.location.reload()
+                alert("Refresh you window")
+                // window.location.reload()
             }).catch((er) => {
                 console.log(er);
             })
