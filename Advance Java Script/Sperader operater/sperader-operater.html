@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        function sum(name , ...arg) {
+            let sum = 0;
+            document.write(`Name ${name} : `)
+            for (const i in arg) {
+                sum += arg[i];
+            }
+            document.write(sum + "<br>")
+        }
+        sum("Krupal",10, 20, 30);
+
+        let arr = ["Krupal",50, 20, 30];
+
+        sum(...arr);// call time too use Three Dots as called as sperade operater
+    </script>
+</body>
+</html>
