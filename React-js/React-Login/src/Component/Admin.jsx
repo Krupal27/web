@@ -5,8 +5,8 @@ import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 
 const Admin = () => {
 
-    const navigate = useNavigate()
     const [userdata, setUserdata] = useState()
+    const navigate = useNavigate()
 
     useEffect(() => {
         let name = sessionStorage.getItem("name")
@@ -20,16 +20,33 @@ const Admin = () => {
                 setUserdata(result)
             })
         })
-    }, [])
-    console.log(userdata);
+    }, [userdata])
+    // console.log(userdata);
 
     let Edit = (id) => {
-        console.log(id);
+        // console.log(id);
         navigate("/useredit/" + id)
         // console.log("Edit");
     }
 
-    
+    let Details = (id) => {
+        // console.log(id);
+        navigate("/userdetails/" + id)
+    }
+
+    let Delete = (id) => {
+        // console.log(id);
+        if (window.confirm("do you want to delete")) {
+            fetch("http://localhost:9988/userdata/" + id, {
+                method: "DELETE"
+            }).then((resp) => {
+                resp.json().then((result) => {
+                    // console.log(result);
+                    alert("you data romove successfully")
+                })
+            })
+        }
+    }
 
     return (
         <>
@@ -56,8 +73,8 @@ const Admin = () => {
                                 <td>{val.role}</td>
                                 <td>
                                     <button className='me-2 bg-black text-white rounded-2' onClick={() => { Edit(val.id) }}>Edit</button>
-                                    <button className='me-2 bg-black text-white rounded-2'>View</button>
-                                    <button className='bg-black text-white rounded-2'>Delete</button>
+                                    <button className='me-2 bg-black text-white rounded-2' onClick={() => { Details(val.id) }}>View</button>
+                                    <button className='bg-black text-white rounded-2' onClick={() => { Delete(val.id) }}>Delete</button>
                                 </td>
                             </tr>
                         )
