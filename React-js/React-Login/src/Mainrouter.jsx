@@ -7,7 +7,6 @@ import Admin from "./Component/Admin";
 import User from "./Component/User";
 import Useredit from "./Component/Useredit";
 import Userdetails from "./Component/Userdetails";
-import Userdelete from "./Component/Userdelete"
 
 const Mainrouter = createBrowserRouter([
     {
@@ -35,14 +34,9 @@ const Mainrouter = createBrowserRouter([
         element: <><Navbar /><Useredit /></>
     },
     {
-        path: "/userdetails",
+        path: "/userdetails/:userid",
         element: <><Navbar /><Userdetails /></>
-    },
-    {
-        path: "/userdelete",
-        element: <><Navbar /><Userdelete /></>
     }
-
 
 ])
 
