@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     MDBContainer,
     MDBInput,
@@ -15,18 +15,22 @@ function Login() {
     const [password, setPassword] = useState();
     const navigate = useNavigate()
 
+    useEffect(() => {
+        sessionStorage.clear()
+    },[])
+
     let login = () => {
         if (password !== "") {
             fetch("http://localhost:9988/userdata?password=" + password).then((resp) => {
                 resp.json().then((result) => {
                     console.log(result);
                     if (result[0]) {
-                        sessionStorage.setItem("name" , name)
-                        sessionStorage.setItem("role" , result[0].role)
+                        sessionStorage.setItem("name", name)
+                        sessionStorage.setItem("role", result[0].role)
                         if (result[0].role == 1) {
                             navigate("/admin")
                         }
-                        else{
+                        else {
                             navigate("/user")
                         }
                     }
