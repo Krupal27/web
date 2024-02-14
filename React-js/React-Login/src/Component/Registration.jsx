@@ -22,10 +22,9 @@ function Registration() {
 
     let redister = () => {
         console.log("redister");
-        let data = { name, email, password }
+        let data = { name, email, password , role : "2" }
         // console.log(data);
-        navigate("/login")
-
+        
         fetch("http://localhost:9988/userdata", {
             method: "POST",
             headers: {
@@ -35,6 +34,7 @@ function Registration() {
         }).then((reap) => {
             reap.json().then((result) => {
                 console.log(result);
+                navigate("/login")
             })
         })
     }

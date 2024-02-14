@@ -11,19 +11,31 @@ import { Link } from 'react-router-dom';
 
 function Login() {
 
+    const [name, setName] = useState();
+    const [password, setPassword] = useState();
+
+    let login = () => {
+        if (password !== "") {
+            fetch("http://localhost:9988/userdata?password=" + password).then((resp) => {
+                resp.json().then((result) => {
+                    console.log(result);
+                })
+            })
+        }
+    }
 
     return (
         <MDBContainer className="p-3 my-5 d-flex flex-column w-25">
 
-            <MDBInput wrapperClass='mb-4' label='Name' id='form1' type='text' />
-            <MDBInput wrapperClass='mb-4' label='Password' id='form2' type='password' />
+            <MDBInput value={name} onChange={(e) => setName(e.target.value)} wrapperClass='mb-4' label='Name' id='form1' type='text' />
+            <MDBInput value={password} onChange={(e) => setPassword(e.target.value)} wrapperClass='mb-4' label='Password' id='form2' type='password' />
 
             <div className="d-flex justify-content-between mx-3 mb-4">
                 <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me' />
                 <a href="!#">Forgot password?</a>
             </div>
 
-            <MDBBtn className="mb-4">Log in</MDBBtn>
+            <MDBBtn className="mb-4" onClick={login}>Log in</MDBBtn>
 
             <div className="text-center">
                 <p>Not a member? <Link to="/registration">Registration</Link></p>
