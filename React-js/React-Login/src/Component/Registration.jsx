@@ -10,10 +10,36 @@ import {
     MDBInput,
     MDBIcon,
     MDBCheckbox
-}
-    from 'mdb-react-ui-kit';
+} from 'mdb-react-ui-kit';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Registration() {
+    const [name, setName] = useState()
+    const [email, setEmail] = useState()
+    const [password, setPassword] = useState()
+    const navigate = useNavigate();
+
+    let redister = () => {
+        console.log("redister");
+        let data = { name, email, password }
+        // console.log(data);
+        navigate("/login")
+
+        fetch("http://localhost:9988/userdata", {
+            method: "POST",
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(data)
+        }).then((reap) => {
+            reap.json().then((result) => {
+                console.log(result);
+            })
+        })
+    }
+
+
     return (
         <MDBContainer fluid>
 
@@ -26,19 +52,19 @@ function Registration() {
 
                             <div className="d-flex flex-row align-items-center mb-4 ">
                                 <MDBIcon fas icon="user me-3" size='lg' />
-                                <MDBInput label='Your Name' id='form1' type='text' className='w-100' />
+                                <MDBInput value={name} onChange={(e) => setName(e.target.value)} label='Your Name' id='form1' type='text' className='w-100' />
                             </div>
 
                             <div className="d-flex flex-row align-items-center mb-4">
                                 <MDBIcon fas icon="envelope me-3" size='lg' />
-                                <MDBInput label='Your Email' id='form2' type='email' />
+                                <MDBInput value={email} onChange={(e) => setEmail(e.target.value)} label='Your Email' id='form2' type='email' />
                             </div>
 
                             <div className="d-flex flex-row align-items-center mb-4">
                                 <MDBIcon fas icon="lock me-3" size='lg' />
-                                <MDBInput label='Password' id='form3' type='password' />
+                                <MDBInput value={password} onChange={(e) => setPassword(e.target.value)} label='Password' id='form3' type='password' />
                             </div>
-                            <MDBBtn className='mb-4' size='lg'>Register</MDBBtn>
+                            <MDBBtn className='mb-4' size='lg' onClick={redister}>Register</MDBBtn>
 
                         </MDBCol>
 
