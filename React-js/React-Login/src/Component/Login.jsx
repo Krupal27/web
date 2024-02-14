@@ -7,18 +7,29 @@ import {
     MDBIcon
 }
     from 'mdb-react-ui-kit';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Login() {
 
     const [name, setName] = useState();
     const [password, setPassword] = useState();
+    const navigate = useNavigate()
 
     let login = () => {
         if (password !== "") {
             fetch("http://localhost:9988/userdata?password=" + password).then((resp) => {
                 resp.json().then((result) => {
                     console.log(result);
+                    if (result[0]) {
+                        sessionStorage.setItem("name" , name)
+                        sessionStorage.setItem("role" , result[0].role)
+                        if (result[0].role == 1) {
+                            navigate("/admin")
+                        }
+                        else{
+                            navigate("/user")
+                        }
+                    }
                 })
             })
         }
