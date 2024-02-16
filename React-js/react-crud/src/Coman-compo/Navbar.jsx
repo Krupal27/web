@@ -44,12 +44,12 @@ export default function App() {
                     </MDBNavbarItem>
                     <MDBNavbarItem>
                         <MDBNavbarLink active aria-current='page' href='#'>
-                        <Link to="/useradd">Useradd</Link>
+                            <Link to="/useradd">Useradd</Link>
                         </MDBNavbarLink>
                     </MDBNavbarItem>
                     <MDBNavbarItem>
                         <MDBNavbarLink active aria-current='page' href='#'>
-                        {/* <Link to="/useredit">Useredit</Link> */}
+                            {/* <Link to="/useredit">Useredit</Link> */}
                         </MDBNavbarLink>
                     </MDBNavbarItem>
                     <MDBNavbarItem>
@@ -60,6 +60,16 @@ export default function App() {
                     <MDBNavbarItem>
                         <MDBNavbarLink active aria-current='page' href='#'>
                             {/* <Link to="/userdelet">Userdelet</Link> */}
+                        </MDBNavbarLink>
+                    </MDBNavbarItem>
+                    <MDBNavbarItem>
+                        <MDBNavbarLink active aria-current='page' href='#'>
+                            <Link to="/usercrud">Usercrud</Link>
+                        </MDBNavbarLink>
+                    </MDBNavbarItem>
+                    <MDBNavbarItem>
+                        <MDBNavbarLink active aria-current='page' href='#'>
+                            <Link to="/usercrud2">Usercrud</Link>
                         </MDBNavbarLink>
                     </MDBNavbarItem>
                 </MDBNavbarNav>
