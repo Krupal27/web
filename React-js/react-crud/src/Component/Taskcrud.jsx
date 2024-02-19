@@ -6,6 +6,7 @@ const Taskcrud = () => {
     const [alldata, setAlldata] = useState([])
     const [show, setShow] = useState(false)
     const [edittext, setEdittext] = useState()
+    // const [inputshow, setInputshow] = useState(false)
 
     let adddata = () => {
         console.log(name);
@@ -49,8 +50,8 @@ const Taskcrud = () => {
                 alldata.map((value, i) =>
                     <>
                         <h3>{value}</h3>
-                        <button onClick={() => Edit(i)}>Edit</button>
                         <button onClick={() => Delete(i)}>Delete</button>
+                        <button onClick={() => Edit(i)} >Edit</button>
                     </>
 
                 )
