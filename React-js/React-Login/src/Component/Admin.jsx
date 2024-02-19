@@ -52,7 +52,7 @@ const Admin = () => {
         <>
 
             <h3>Admin</h3>
-            <Link to="/registration"><button className='m-2 px-3 bg-black text-white rounded-2'>Add User</button></Link>
+            <Link to="/registration"><button className='m-2 px-3 bg-black text-white rounded-3'>Add User</button></Link>
             <MDBTable>
                 <MDBTableHead>
                     <tr>

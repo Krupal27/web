@@ -20,17 +20,17 @@ function Registration() {
     const [password, setPassword] = useState()
     const navigate = useNavigate();
 
-    let redister = () => {
+    let register = () => {
         console.log("redister");
-        let data = { name, email, password , role : "2" }
+        let data = { name, email, password, role: "2" }
         // console.log(data);
-        
+
         fetch("http://localhost:9988/userdata", {
             method: "POST",
             headers: {
-                "Content-Type":"application/json"
+                "Content-Type": "application/json"
             },
-            body:JSON.stringify(data)
+            body: JSON.stringify(data)
         }).then((reap) => {
             reap.json().then((result) => {
                 console.log(result);
@@ -64,7 +64,7 @@ function Registration() {
                                 <MDBIcon fas icon="lock me-3" size='lg' />
                                 <MDBInput value={password} onChange={(e) => setPassword(e.target.value)} label='Password' id='form3' type='password' />
                             </div>
-                            <MDBBtn className='mb-4' size='lg' onClick={redister}>Register</MDBBtn>
+                            <MDBBtn className='mb-4' size='lg' onClick={register}>Register</MDBBtn>
 
                         </MDBCol>
 

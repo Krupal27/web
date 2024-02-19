@@ -33,6 +33,8 @@ function Login() {
                         else {
                             navigate("/user")
                         }
+                    }else{
+                        alert("Please create your account")
                     }
                 })
             })
