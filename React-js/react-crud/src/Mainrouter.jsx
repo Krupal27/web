@@ -9,6 +9,7 @@ import Userdetails from './Component/Userdetails';
 import Usercrud from './Component/Usercrud';
 import Usercrud2 from './Component/2Usercrud';
 import Taskcrud from "./Component/Taskcrud"
+import Crudtask from './Component/Crudtask';
 
 const Mainrouter = createBrowserRouter([
     {
@@ -46,6 +47,10 @@ const Mainrouter = createBrowserRouter([
     {
         path: "/taskcrud",
         element: <><Navbar /><Taskcrud /></>
+    },
+    {
+        path: "/crudtask",
+        element: <><Navbar /><Crudtask /></>
     }
 ])
 
