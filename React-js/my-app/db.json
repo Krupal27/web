@@ -1,0 +1,156 @@
+{
+  "Hoteldata": [
+    {
+      "id": "1",
+      "Hotel Name": "Taj Skyline",
+      "Room": 543,
+      "Price": 28910,
+      "Location": "Mumbia"
+    },
+    {
+      "id": "2",
+      "Hotel Name": "ITC Narmada",
+      "Room": 300,
+      "Price": 14560,
+      "Location": "Ahemdabad"
+    },
+    {
+      "id": "3",
+      "Hotel Name": "The Leela Gandhinagar",
+      "Room": 326,
+      "Price": 10000,
+      "Location": "Gandhinagar"
+    },
+    {
+      "id": "4",
+      "Hotel Name": "The Belvedere Golf and Country Club",
+      "Room": 55,
+      "Price": 10510,
+      "Location": "Sarkhej - Gandhinagar Hwy"
+    },
+    {
+      "id": "5",
+      "Hotel Name": "Madhubhan Resort",
+      "Room": 106,
+      "Price": 10544,
+      "Location": "Anand"
+    },
+    {
+      "id": "6",
+      "Hotel Name": "Neonz Resort",
+      "Room": 82,
+      "Price": 11485,
+      "Location": "Sojitra"
+    },
+    {
+      "id": "7",
+      "Hotel Name": "Woods At Sasan",
+      "Room": 38,
+      "Price": 23885,
+      "Location": "Sasan"
+    },
+    {
+      "id": "8",
+      "Hotel Name": "Sayaji Hotel",
+      "Room": 60,
+      "Price": 8548,
+      "Location": "Rajkot"
+    },
+    {
+      "id": "9",
+      "Hotel Name": "Courtyard by Marriott Ahmedabad",
+      "Room": 164,
+      "Price": 14809,
+      "Location": "Ahmedabad"
+    },
+    {
+      "id": "10",
+      "Hotel Name": "Fortune Park ",
+      "Room": 151,
+      "Price": 11092,
+      "Location": "Rajkot"
+    },
+    {
+      "id": "11",
+      "Hotel Name": "Hyatt Ahmedabad ",
+      "Room": 269,
+      "Price": 13288,
+      "Location": "Ahmedabad"
+    },
+    {
+      "id": "12",
+      "Hotel Name": "The Imperial Palace",
+      "Room": 80,
+      "Price": 7800,
+      "Location": "Rajkot"
+    },
+    {
+      "id": "13",
+      "Hotel Name": "The Fern Gir Forest Resort",
+      "Room": 40,
+      "Price": 11380,
+      "Location": "Sasan Gir"
+    },
+    {
+      "id": "14",
+      "Hotel Name": "Wyndham Ahmedabad Shela",
+      "Room": 160,
+      "Price": 30090,
+      "Location": "Ahmedabad Shela"
+    },
+    {
+      "id": "15",
+      "Hotel Name": "Grand Mercure Vadodara Surya Palace",
+      "Room": 144,
+      "Price": 6159,
+      "Location": "Vadodara"
+    },
+    {
+      "id": "16",
+      "Hotel Name": "Gir Serai - IHCL SeleQtions",
+      "Room": 31,
+      "Price": 12853,
+      "Location": "Sasan"
+    },
+    {
+      "id": "17",
+      "Hotel Name": "Radisson Blu Hotel, Ahmedabad",
+      "Room": 118,
+      "Price": 6766,
+      "Location": "Ahmedabad"
+    },
+    {
+      "id": "18",
+      "Hotel Name": "The Deltin",
+      "Room": 176,
+      "Price": 7719,
+      "Location": "Daman"
+    },
+    {
+      "id": "19",
+      "Hotel Name": "Club Mahindra Resorts - Gir",
+      "Room": 43,
+      "Price": 6041,
+      "Location": "Junagadh"
+    },
+    {
+      "id": "20",
+      "Hotel Name": "The Fern Sattva Resort",
+      "Room": 81,
+      "Price": 6261,
+      "Location": "Dwarka"
+    },
+    {
+      "id": "",
+      "name": "Krupal",
+      "email": "krupal123@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "",
+      "name": "Krupal Patel ",
+      "email": "krupal123@gmail.com",
+      "password": "123456789"
+    }
+  ]
+}
