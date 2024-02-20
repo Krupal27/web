@@ -69,16 +69,6 @@ export default function App() {
                     </MDBNavbarItem>
                     <MDBNavbarItem>
                         <MDBNavbarLink active aria-current='page' href='#'>
-                            <Link to="/usercrud2">Usercrud</Link>
-                        </MDBNavbarLink>
-                    </MDBNavbarItem>
-                    <MDBNavbarItem>
-                        <MDBNavbarLink active aria-current='page' href='#'>
-                            <Link to="/taskcrud">Taskcrud</Link>
-                        </MDBNavbarLink>
-                    </MDBNavbarItem>
-                    <MDBNavbarItem>
-                        <MDBNavbarLink active aria-current='page' href='#'>
                             <Link to="/crudtask">Crudtask</Link>
                         </MDBNavbarLink>
                     </MDBNavbarItem>

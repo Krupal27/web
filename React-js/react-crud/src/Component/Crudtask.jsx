@@ -6,7 +6,7 @@ const Crudtask = () => {
     const [alldata, setAlldata] = useState([]);
     const [show, setShow] = useState(false)
     const [edittext, setEdittext] = useState()
-    const [showinput, setShowinput] = useState(false)
+    // const [showinput, setShowinput] = useState(false)
 
     let adddata = () => {
         // console.log("adddata");
@@ -26,7 +26,7 @@ const Crudtask = () => {
     let Edit = (i) => {
         console.log("Edit", i);
         setName(alldata[i])
-        setShowinput(true,[i])
+        // setShowinput(true)
         setShow(true)
         setEdittext(i)
     }
@@ -56,7 +56,7 @@ const Crudtask = () => {
                         <h4>{value}</h4>
                         <button onClick={() => Edit(i)}>Edit</button>
                         <button onClick={() => Delete(i)}>Delete</button>
-                        {showinput && <input type='text'/>}
+                        {/* {showinput && <input type='text'/>} */}
                     </>
                 )
 
