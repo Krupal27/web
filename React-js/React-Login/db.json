@@ -27,6 +27,13 @@
       "email": "kishan123@gmail.com",
       "password": "Kishan@123",
       "role": "2"
+    },
+    {
+      "id": "5378",
+      "name": "Montu",
+      "email": "montu123@gmail.com",
+      "password": "Montu@123",
+      "role": "2"
     }
   ]
 }
