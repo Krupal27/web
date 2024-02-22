@@ -72,6 +72,39 @@ ul li .link:hover {
   width: 100%;
 }
 
+.cart {
+  cursor: pointer;
+}
+
+.cart span:nth-child(1) {
+  font-size: 20px;
+  color: white;
+}
+
+.warning {
+  height: 35px;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  background-color: rgb(210, 91, 91);
+  font-size: 1rem;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  /* float: right; */
+}
+
+.cart span:nth-child(2) {
+  padding: 0 3px;
+  background-color: red;
+  color: white;
+  font-weight: bolx;
+  border-radius: 5px;
+  position: relative;
+  top: -15px;
+}
+
 .sec-one {
   padding: 50px 0;
 }
