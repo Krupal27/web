@@ -14,9 +14,8 @@ const Product = () => {
         // console.log("addtocart", item);
         let isPresent = false;
         cart.forEach((product) => {
-            if (item.id === product.id) {
+            if (item.id === product.id)
                 isPresent = true;
-            }
         })
         if (isPresent) {
             setWarning(true)
