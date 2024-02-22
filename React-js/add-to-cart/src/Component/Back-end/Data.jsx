@@ -14,89 +14,89 @@ import img12 from "../Back-end/assets/n8.jpg"
 
 const list = [
     {
-        id:1,
+        id: 1,
         name: "Cartoon Astronaut T-Shirt",
-        price:"78",
-        amount:"1",
-        img:`${img1}`
+        price: "78",
+        amount: "1",
+        img: `${img1}`
     },
     {
-        id:2,
+        id: 2,
         name: "Cartoon Astronaut T-Shirt",
-        price:"78",
-        amount:"1",
-        img:`${img2}`
+        price: "78",
+        amount: "1",
+        img: `${img2}`
     },
     {
-        id:3,
+        id: 3,
         name: "Cartoon Astronaut T-Shirt",
-        price:"78",
-        amount:"1",
-        img:`${img3}`
+        price: "78",
+        amount: "1",
+        img: `${img3}`
     },
     {
-        id:4,
+        id: 4,
         name: "Cartoon Astronaut T-Shirt",
-        price:"78",
-        amount:"1",
-        img:`${img4}`
+        price: "78",
+        amount: "1",
+        img: `${img4}`
     },
     {
-        id:5,
+        id: 5,
         name: "Cartoon Astronaut T-Shirt",
-        price:"78",
-        amount:"1",
-        img:`${img5}`
+        price: "78",
+        amount: "1",
+        img: `${img5}`
     },
     {
-        id:6,
+        id: 6,
         name: "Cartoon Astronaut T-Shirt",
-        price:"78",
-        amount:"1",
-        img:`${img6}`
+        price: "78",
+        amount: "1",
+        img: `${img6}`
     },
     {
-        id:7,
+        id: 7,
         name: "Cartoon Astronaut T-Shirt",
-        price:"78",
-        amount:"1",
-        img:`${img7}`
+        price: "78",
+        amount: "1",
+        img: `${img7}`
     },
     {
-        id:8,
+        id: 8,
         name: "Cartoon Astronaut T-Shirt",
-        price:"78",
-        amount:"1",
-        img:`${img8}`
+        price: "78",
+        amount: "1",
+        img: `${img8}`
     },
     {
-        id:9,
+        id: 9,
         name: "Cartoon Astronaut T-Shirt",
-        price:"78",
-        amount:"1",
-        img:`${img9}`
+        price: "78",
+        amount: "1",
+        img: `${img9}`
     },
     {
-        id:10,
+        id: 10,
         name: "Cartoon Astronaut T-Shirt",
-        price:"78",
-        amount:"1",
-        img:`${img10}`
+        price: "78",
+        amount: "1",
+        img: `${img10}`
     },
     {
-        id:11,
+        id: 11,
         name: "Cartoon Astronaut T-Shirt",
-        price:"78",
-        amount:"1",
-        img:`${img11}`
+        price: "78",
+        amount: "1",
+        img: `${img11}`
     },
     {
-        id:12,
+        id: 12,
         name: "Cartoon Astronaut T-Shirt",
-        price:"78",
-        amount:"1",
-        img:`${img12}`
+        price: "78",
+        amount: "1",
+        img: `${img12}`
     },
 ]
 
-export default list
+export default list;
