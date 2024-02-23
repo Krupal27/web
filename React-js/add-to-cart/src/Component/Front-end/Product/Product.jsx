@@ -25,9 +25,8 @@ const Product = () => {
             return;
         }
         setCart([...cart, item])
-        console.log(cart);
-
     }
+    console.log(cart);
 
     return (
         <>
@@ -53,7 +52,7 @@ const Product = () => {
                             }
                         </div>
                     </div>
-                </section> : <Cart />
+                </section> : <Cart cart={cart} setCart={setCart} />
             }
 
 
