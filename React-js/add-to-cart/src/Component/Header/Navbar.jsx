@@ -14,7 +14,7 @@ const Navbar = ({ size, setShow }) => {
                             </div>
                             <div className="nav-links">
                                 <ul>
-                                    <li><Link className='link'>Product</Link></li>
+                                    <li><Link className='link'>Home</Link></li>
                                     <li className='cart' onClick={() => setShow(false)}>
                                         <span><Link className='card-icon'><i class="fa-solid fa-cart-shopping"></i></Link></span>
                                         <span>{size}</span>

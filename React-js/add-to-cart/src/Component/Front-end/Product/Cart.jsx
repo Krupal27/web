@@ -1,58 +1,62 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Cart = ({ cart, setCart }) => {
-    const [price, setPrice] = useState()
 
+    const [price, setPrice] = useState()
     useEffect(() => {
-        handlePrice();
+        handleprice()
     })
 
-    const handlePrice = () => {
-        let ans = 0;
-        cart.map((item) => (
-            ans += item.amount * item.price
-        ))
-        setPrice(ans);
+    let handleremove = (id) => {
+        console.log("handleremove", id);
+        let arr = cart.filter((item) => item.id !== id)
+        setCart(arr)
     }
 
-    let handleremove = (id) => {
-        // console.log("handleremove");
-        const arr = cart.filter((item) => item.id !== id)
-        setCart(arr)
+    let handleprice = () => {
+        // console.log("handleprice");
+        let ans = 0
+        cart.map((item) => {
+            ans += item.amount * item.price
+        })
+        setPrice(ans)
     }
 
     return (
         <>
 
             <h3>Cart</h3>
-            <article>
-                {
-                    cart.map((item) =>
-                        <div className='cart_box'>
-                            <div className="cart_img">
-                                <img src={item.img} alt="" />
-                                <p>{item.name}</p>
-                            </div>
-                            <div>
-                                <button>Increment</button>
-                                <span><button>{item.amount}</button></span>
-                                <button>Decrement</button>
-                            </div>
-                            <div className='item-price'>
-                                <p>Rs -{item.price}</p>
-                                <button onClick={() => handleremove(item.id)}>Remove</button>
-                            </div>
+            {
+                cart.map((item) => (
+                    <div className="cart_box">
+                        <div className="cart_img">
+                            <img src={item.img} alt="" />
                         </div>
-                    )
-                }
-                <div className='total'>
-                    <h4>Total Price</h4>
-                    <h3>Rs - {price}</h3>
+                        <div className='cart_item'>
+                            <h3>{item.name}</h3>
+                        </div>
+                        <div className='cart_btn'>
+                            <button>Increment</button>
+                            <button>{item.amount}</button>
+                            <button>Decrement</button>
+                        </div>
+                        <div className='cart_price'>
+                            <h4>Rs -{item.price}</h4>
+                        </div>
+                        <div className='remove_btn'>
+                            <button onClick={() => handleremove(item.id)}>Remove</button>
+                        </div>
+                    </div>
+                ))
+            }
+            <div className="total">
+                <div className='total-price'>
+                    <h2>Total Price</h2>
                 </div>
-            </article>
-
-
+                <div>
+                    <h2>Rs -{price}</h2>
+                </div>
+            </div>
         </>
     );
 }

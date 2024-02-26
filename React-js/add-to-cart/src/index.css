@@ -83,10 +83,10 @@ ul li .link:hover {
 
 .warning {
   height: 35px;
-  width: 200px;
+  width: 20%;
   position: absolute;
   right: 0;
-  top: 10%;
+  top: 13%;
   background-color: rgb(210, 91, 91);
   font-size: 1rem;
   color: white;
@@ -180,7 +180,7 @@ article {
 
 .cart_img {
   display: flex;
-  width: 400px;
+  /* width: 400px; */
 }
 
 .cart_img p {
@@ -189,6 +189,8 @@ article {
 }
 
 .cart_box {
+  width: 60%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -221,7 +223,6 @@ article {
   color: white;
   background-color: skyblue;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 .cart_box div:nth-child(3) button:hover {
@@ -236,6 +237,8 @@ article {
 }
 
 .total {
+  width: 60%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -251,4 +254,14 @@ article {
   font-size: 2rem;
   color: green;
   font-weight: bold;
+}
+
+.remove_btn button{
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 5px 8px;
+  background-color: #05a79c;
+  cursor: pointer;
 }
